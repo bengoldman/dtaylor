@@ -26,6 +26,11 @@
 
 		</div>
 
+		<?php // Opens/closes mobile nav ?>
+		<script>
+			function openNav() {document.getElementById("mySidenav").style.width = "250px";}
+			function closeNav() {document.getElementById("mySidenav").style.width = "0";}
+		</script>
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
 

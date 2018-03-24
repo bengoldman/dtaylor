@@ -39,6 +39,28 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 
+//Mobile styles adjusted for desktop
+.menu-sandwich {
+	display: none;
+}
+
+.sidenav {
+	width: 500px !important;
+	background-color: transparent;
+	padding-top: 5px;
+	
+	.closebtn {
+		display: none;
+	}
+
+	li {
+		line-height: 1.5;
+		border-bottom: none;
+	}
+}
+
+//End mobile adjustments.
+
 .nav {
 	border: 0;
 	ul {

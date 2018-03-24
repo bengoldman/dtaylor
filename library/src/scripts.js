@@ -116,5 +116,5 @@ jQuery(document).ready(function($) {
   */
   loadGravatars();
 
-
 }); /* end of as page load scripts */
+
