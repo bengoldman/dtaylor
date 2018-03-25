@@ -34,8 +34,7 @@ COLORS
 Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
 *********************/
-/*
-Here's a great tutorial on how to
+/*Here's a great tutorial on how to
 use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
@@ -249,6 +248,17 @@ come into play. Have fun!
 /*********************
 GENERAL STYLES
 *********************/
+.your-name,
+.your-email {
+  float: left;
+  width: 48%; }
+
+.your-name {
+  padding-right: 0.938rem; }
+
+.your-eamil {
+  padding-left: 0.938rem; }
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -259,6 +269,14 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 /*********************
+HOMEPAGE STYLES
+*********************/
+.flex-resume {
+  margin-left: 100px; }
+  .flex-resume .flex-row {
+    flex-direction: row; }
+
+/*********************
 NAVIGATION STYLES
 *********************/
 .menu-sandwich {
@@ -267,7 +285,8 @@ NAVIGATION STYLES
 .sidenav {
   width: 500px !important;
   background-color: transparent;
-  padding-top: 5px; }
+  padding-top: 5px;
+  position: absolute; }
   .sidenav .closebtn {
     display: none; }
   .sidenav li {
@@ -290,13 +309,15 @@ NAVIGATION STYLES
     */
     /* showing sub-menus */ }
     .nav li a {
+      font-size: 1.250em;
       border-bottom: 0;
+      color: #323944;
       /*
       you can use hover styles here even though this size
       has the possibility of being a mobile device.
       */ }
       .nav li a:hover, .nav li a:focus {
-        color: #fff;
+        color: #111111;
         text-decoration: underline; }
     .nav li ul.sub-menu,
     .nav li ul.children {
@@ -364,6 +385,14 @@ SIDEBARS & ASIDES
 /* recent-comments widget */
 /* search widget */
 /* text widget */
+/*********************
+HEADER STYLES
+*********************/
+#logo-descr {
+  font-size: 4.375rem;
+  color: chartreuse;
+  width: 80%; }
+
 /*********************
 FOOTER STYLES
 *********************/

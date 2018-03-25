@@ -11,20 +11,6 @@ and will be used across all viewports.
 
 ******************************************************************/
 
-/*********************
-GENERAL STYLES
-*********************/
-
-body {
-	font-family: $lato;
-	font-size: 100%;
-	line-height: 1.5;
-	color: $text-color;
-	background-color:  $gray;
-  	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
-}
-
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -103,6 +89,49 @@ a, a:visited {
 	}
 }
 
+/*********************
+HEADER STYLES
+*********************/
+
+#logo-descr {
+
+	font-size: 3.438rem;
+	color: chartreuse;
+	width: 100%;
+
+	p {
+		
+	}
+}
+
+/*********************
+HOMEPAGE STYLES
+*********************/
+
+.flex-resume {
+	width: 90%;
+}
+.flex-row {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	border-bottom: dotted 1px;
+
+	&:last-child {
+		border: none;
+	}
+
+	.flex-item1, .flex-item2 {
+		flex: 1;
+
+		p {
+			width: 100% !important;
+			text-align: left !important;
+		}
+	}
+
+}
+
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
@@ -148,28 +177,14 @@ h5, .h5 {
 	letter-spacing: 2px;
 }
 
-/*********************
-HEADER STYLES
-*********************/
-
-.header {
-	background-color: $black;
-}
-
-	#logo {
-		margin: 0.75em 0;
-
-		a {
-			color: $white;
-		}
-	}
-
-
+/******************************************************************
+MOBILE NAV STYLES
+******************************************************************/
 
  //the side navigation menu for mobile 
 
  .menu-sandwich {
-	 color: white;
+	 color: $super-black;
 	 position: absolute; 
 	 top: 0;
 	 right: 10px; 
@@ -204,16 +219,20 @@ HEADER STYLES
 	}
 
 	a {
-		padding: 8px 8px 8px 32px;
 		text-decoration: none;
 		font-size: 25px;
-		color: #818181;
-		display: block;
 		transition: 0.3s;
 	}
 
 }
 
+.nav li a {
+	color: $white;
+
+	&:hover {
+		color:	$white;
+	}
+}
 
 @media screen and (max-height: 480px) {
   .sidenav {padding-top: 15px;}
@@ -833,34 +852,4 @@ SIDEBARS & ASIDES
 		margin-bottom: 1.5em;
 	}
 
-/*********************
-FOOTER STYLES
-*********************/
 
-.footer {
-	clear: both;
-	background-color: $black;
-	color: $light-gray;
-}
-
-	/*
-	if you checked out the link above:
-	http://www.alistapart.com/articles/organizing-mobile/
-	you'll want to style the footer nav
-	a bit more in-depth. Remember to keep
-	it simple because you'll have to
-	override these styles for the desktop
-	view.
-	*/
-	.footer-links {
-
-		ul {
-
-			li {}
-
-		}
-
-	} /* end .footer-links */
-
-
-	.copyright {}

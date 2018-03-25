@@ -147,6 +147,21 @@ be set to display none.
 }
 
 /*********************
+GENERAL STYLES
+*********************/
+
+body {
+	font-family: $lato;
+	font-size: 100%;
+	line-height: 1.5;
+	color: $text-color;
+	background-color:  $white;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+
+
+/*********************
 NAVIGATION STYLES
 *********************/
 
@@ -167,9 +182,9 @@ and more scalable.
 
 		a {
 			display: block;
-			color: $meta-gray;
 			text-decoration: none;
 			padding: 0.75em;
+			margin-top: 0.938em;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -178,7 +193,7 @@ and more scalable.
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
-				color: $white;
+
 			}
 		}
 
@@ -228,3 +243,152 @@ and more scalable.
 	}  /* end current highlighters */
 
 } /* end .nav */
+
+/*********************
+HEADER STYLES
+*********************/
+
+.home .parallax, .blog .parallax {
+	height: 100%; 
+	background-attachment: fixed;
+}
+
+.home .header, {
+	background-image: url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/testimage.jpeg");
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+	border: $gray solid 0.125rem;
+		@media all and (min-width: 1240px) { 
+			height: 900px; }
+}
+
+.header {
+	background-color: $black;
+}
+
+#logo {
+	margin: 0.75rem 0;
+	font-size: 2.813rem;
+	font-weight: bold;
+
+	a {
+		color: $super-black;
+		text-decoration: none;
+	}
+}
+
+
+
+
+/*********************
+HOMEPAGE STYLES
+*********************/
+
+.home {
+	
+	.hentry {
+		border-radius: 0;
+		border: none;
+	}
+
+	.d-5of7 {
+		max-width: 100%;
+		width: 100%;
+		float: none;
+		padding-right: auto;
+		padding-left: auto;
+
+		.entry-content p {
+			text-align: center;
+			width: 70%;
+			margin: 0 auto;
+			font-family: europa;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 18px;
+			letter-spacing: -.01em;
+			line-height: 32px;
+		}
+	}
+}
+
+.featured-image-home img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 3em;
+	border: 0;
+}
+
+.page-title {
+	text-align: center;
+	font-size: 3.125rem;
+	font-weight: bold;
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.footer {
+	clear: both;
+	background-color: $black;
+	color: $light-gray;
+}
+
+.nav.footer-nav {
+
+		a {
+			color: $light-gray;
+			
+			&:hover, &:focus {
+				color: $white;
+			}
+		}
+
+}
+
+#menu-footer,
+.copyright,
+.shameless-plug {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+	/*
+	if you checked out the link above:
+	http://www.alistapart.com/articles/organizing-mobile/
+	you'll want to style the footer nav
+	a bit more in-depth. Remember to keep
+	it simple because you'll have to
+	override these styles for the desktop
+	view.
+	*/
+	.footer-links {
+
+		ul {
+
+			li {}
+
+		}
+
+	} /* end .footer-links */
+
+
+	.copyright {}
+
+	.shameless-plug {
+		a {
+			color: $alert-yellow;
+			text-decoration: none;
+			text-align: center;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+

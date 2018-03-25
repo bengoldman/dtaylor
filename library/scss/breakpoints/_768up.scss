@@ -19,6 +19,22 @@ GENERAL STYLES
 
 body {}
 
+
+//Contact Page
+.your-name,
+.your-email {
+	float: left;
+	width: 48%
+}
+
+.your-name {
+	padding-right: 0.938rem;
+}
+
+.your-eamil {
+	padding-left: 0.938rem;
+}
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -36,6 +52,19 @@ HEADER STYLES
 	#logo {}
 
 /*********************
+HOMEPAGE STYLES
+*********************/
+
+.flex-resume {
+	margin-left: 100px;
+
+	.flex-row {
+		flex-direction: row;
+	}
+}
+
+
+/*********************
 NAVIGATION STYLES
 *********************/
 
@@ -48,6 +77,7 @@ NAVIGATION STYLES
 	width: 500px !important;
 	background-color: transparent;
 	padding-top: 5px;
+	position: absolute; //change to 'fixed' to unstick nav.  Or, just delete since fixed is declared at base.
 	
 	.closebtn {
 		display: none;
@@ -58,6 +88,7 @@ NAVIGATION STYLES
 		border-bottom: none;
 	}
 }
+
 
 //End mobile adjustments.
 
@@ -72,14 +103,16 @@ NAVIGATION STYLES
 		position: relative;
 
 		a {
+			font-size: 1.250em;
 			border-bottom: 0;
+			color: $black;
 
 			/*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				color: $white;
+				color: $super-black;
 				text-decoration: underline;
 			}
 		}
@@ -280,6 +313,23 @@ SIDEBARS & ASIDES
 	.textwidget {}
 	.widget_text {}
 	.textwidget p {}
+
+
+
+/*********************
+HEADER STYLES
+*********************/
+
+#logo-descr {
+
+	font-size: 4.375rem;
+	color: chartreuse;
+	width: 80%;
+
+	p {
+		
+	}
+}
 
 
 /*********************

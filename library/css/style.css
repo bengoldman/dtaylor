@@ -453,8 +453,7 @@ COLORS
 Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
 *********************/
-/*
-Here's a great tutorial on how to
+/*Here's a great tutorial on how to
 use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
@@ -907,7 +906,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
-  color: #fff;
+  color: #ffff;
   font-size: 0.9em;
   font-size: 34px;
   line-height: 34px;
@@ -919,7 +918,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out; }
   .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
-    color: #fff;
+    color: #ffff;
     text-decoration: none;
     outline: none; }
   .blue-btn:active, .comment-reply-link:active, #submit:active {
@@ -1062,7 +1061,7 @@ textarea,
   .field.is-invalid {
     color: #fbe3e4;
     border-color: #fbe3e4;
-    background-color: #fff;
+    background-color: #ffff;
     background-position: 99% center;
     background-repeat: no-repeat;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDREQkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDREQ0YwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ3ODRGRkE2RjA0QTExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERBRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+U8iT5wAAAedJREFUeNqk1U9I02Ecx/HtV3aIFAc1hcRDUoGXRAq0oNLA2CrsEFmHbikZu0iQYIFGYAiegkCpLipBxPpDEBMUzB0EhSG2LhG7hMR2GviPgUTvB57Bw8P3+U23B16HPX8+e/b8nt93wezZSMCnhXETF3AcB5BDCnH8Dq98ExcGHcFn8Ah3cdDni+fxnPDv9oAnTB7CKu6VCFXtChZy56LxUjt+jfuB8toSOth9wd7xWAWhqrUjYR/FRTwWJm+iIPT/w7bQf5ljiZnBg45dtKFX6H+LU8gIY8OEV6vgTkStwXWE8BPTGDHGPqNPz2mCfSOOYkA99TvCt1bhGPL68zMcwmncMuape10jrI+q4BbHi/FLn31S9z2x5tRhTc+1W506ipM+T3oRD4X+8+qtc4SqFvL0z/Fr14S+Szjis8bz9Lvvaq8cwS/wwGfdlqfPSWqTiFlX77o13u9Ym1PBs8JAytpRoy44X9Ft9E/gvbA+rYKn8NcaaMVc8UHgBw4b9/iqUQZ6hOAJFbyDcUflmsEX4a6+wTtHGfhAIUqa1U29Zc2BytouThD8x6xuN5CtMPi2CrXLZkZf/HyZoRFCP7n+QVR4PV7uI/AjGghN7OU/r1ilnqILtfpNC+o6vIFljBKYlhb/F2AAgaBsWR5wRiIAAAAASUVORK5CYII=);
@@ -1102,7 +1101,7 @@ textarea,
   .field.is-valid {
     color: #e6efc2;
     border-color: #e6efc2;
-    background-color: #fff;
+    background-color: #ffff;
     background-position: 99% center;
     background-repeat: no-repeat;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDRERkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDRFMEYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MzQ0NERERjA0QjExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERFRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+7olkTQAAAfhJREFUeNqklU9oE0EUhzdroWjw0tBeWlDxkEaIp55TsCU9VKIgCrHBelA8CQ1Kr1WPbZrQ3gqtQqvGqxpQc2jBk6BIIaAGD4qNCKURpDSKiPi98gLDsJt//uBjsztvfnk7895sIPAw6/joGMThFJyAXn2+A+9gA57/TaY/eU0OeBgfhGm4DiGnsb7DAszxBz/NAdcKjMJLuNWCqagHbsscN5+L+hmH4QkMOe1L5jzFfNA2PgT34ajTuY7AGuZB0/hmh5m+gS0r8xv1zRvg+gGCHZiOwnF4DP3iB3sQkYxPd2C6CWfhB9Xwlus5+K1j4jXuaq3a+gM1H9OPcAa+7q9lPidZJqHbiIm7Wg22rsEI7FrPSzAMX/T+ADyAKSsu7Fr1KplehLvwCs5DvfBf65p+MypqRbO1FXK9utH4/QKuaqYTsG3E3INJv00Q46px3+XxanJ/Ute2/vqP4FKDza2KcdljIKdnhS0xXYULTaqmLMZFn8FFSFtvt6x70ExFCS5oUXspq2ssa7oEl1swFa+CGFdgtkHgPDyDKy02zyxNU6lXRUZb1EuHYayNNs+Yh5B0WQo+/8fpJnNTZFuzz2OpjoQ2QruSOQlMy35fEGmEGMxY9e1brxobw7TkWA1h6xfckUPb+JhGoE/Hpfvew7qUld/H9J8AAwDpw3WYrxcZ3QAAAABJRU5ErkJggg==);
@@ -1227,6 +1226,70 @@ select {
   background-repeat: no-repeat;
   background-position: 97.5% center; }
 
+.page-id-10 section {
+  text-align: left; }
+  .page-id-10 section .field:hover {
+    border-color: red; }
+.page-id-10 input[type="submit"] {
+  background-color: #111111;
+  color: #ffff;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 5px 25px; }
+.page-id-10 input[type="text"],
+.page-id-10 input[type="password"],
+.page-id-10 input[type="datetime"],
+.page-id-10 input[type="datetime-local"],
+.page-id-10 input[type="date"],
+.page-id-10 input[type="month"],
+.page-id-10 input[type="time"],
+.page-id-10 input[type="week"],
+.page-id-10 input[type="number"],
+.page-id-10 input[type="email"],
+.page-id-10 input[type="url"],
+.page-id-10 input[type="search"],
+.page-id-10 input[type="tel"],
+.page-id-10 input[type="color"],
+.page-id-10 select,
+.page-id-10 textarea,
+.page-id-10 .field {
+  border: 1px solid lightgray; }
+  .page-id-10 input[type="text"]:hover, .page-id-10 input[type="text"]:focus,
+  .page-id-10 input[type="password"]:hover,
+  .page-id-10 input[type="password"]:focus,
+  .page-id-10 input[type="datetime"]:hover,
+  .page-id-10 input[type="datetime"]:focus,
+  .page-id-10 input[type="datetime-local"]:hover,
+  .page-id-10 input[type="datetime-local"]:focus,
+  .page-id-10 input[type="date"]:hover,
+  .page-id-10 input[type="date"]:focus,
+  .page-id-10 input[type="month"]:hover,
+  .page-id-10 input[type="month"]:focus,
+  .page-id-10 input[type="time"]:hover,
+  .page-id-10 input[type="time"]:focus,
+  .page-id-10 input[type="week"]:hover,
+  .page-id-10 input[type="week"]:focus,
+  .page-id-10 input[type="number"]:hover,
+  .page-id-10 input[type="number"]:focus,
+  .page-id-10 input[type="email"]:hover,
+  .page-id-10 input[type="email"]:focus,
+  .page-id-10 input[type="url"]:hover,
+  .page-id-10 input[type="url"]:focus,
+  .page-id-10 input[type="search"]:hover,
+  .page-id-10 input[type="search"]:focus,
+  .page-id-10 input[type="tel"]:hover,
+  .page-id-10 input[type="tel"]:focus,
+  .page-id-10 input[type="color"]:hover,
+  .page-id-10 input[type="color"]:focus,
+  .page-id-10 select:hover,
+  .page-id-10 select:focus,
+  .page-id-10 textarea:hover,
+  .page-id-10 textarea:focus,
+  .page-id-10 .field:hover,
+  .page-id-10 .field:focus {
+    border: 3px solid #fbe3e4; }
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
@@ -1245,18 +1308,6 @@ possible. This is called at the top of the main stylsheet
 and will be used across all viewports.
 
 ******************************************************************/
-/*********************
-GENERAL STYLES
-*********************/
-body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 100%;
-  line-height: 1.5;
-  color: #5c6b80;
-  background-color: #eaedf2;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -1321,6 +1372,40 @@ a, a:visited {
     */
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
 
+/*********************
+HEADER STYLES
+*********************/
+#logo-descr {
+  font-size: 3.438rem;
+  color: chartreuse;
+  width: 100%; }
+
+/*********************
+HOMEPAGE STYLES
+*********************/
+.flex-resume {
+  width: 90%; }
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: dotted 1px; }
+  .flex-row:last-child {
+    border: none; }
+  .flex-row .flex-item1, .flex-row .flex-item2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    .flex-row .flex-item1 p, .flex-row .flex-item2 p {
+      width: 100% !important;
+      text-align: left !important; }
+
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
@@ -1357,19 +1442,11 @@ h5, .h5 {
   text-transform: uppercase;
   letter-spacing: 2px; }
 
-/*********************
-HEADER STYLES
-*********************/
-.header {
-  background-color: #323944; }
-
-#logo {
-  margin: 0.75em 0; }
-  #logo a {
-    color: #fff; }
-
+/******************************************************************
+MOBILE NAV STYLES
+******************************************************************/
 .menu-sandwich {
-  color: white;
+  color: #111111;
   position: absolute;
   top: 0;
   right: 10px;
@@ -1400,13 +1477,15 @@ HEADER STYLES
     line-height: 1;
     border-bottom: dotted 1px #ffffff4d; }
   .sidenav a {
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
-    display: block;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
+
+.nav li a {
+  color: #ffff; }
+  .nav li a:hover {
+    color: #ffff; }
 
 @media screen and (max-height: 480px) {
   .sidenav {
@@ -1421,7 +1500,7 @@ POSTS & CONTENT STYLES
   margin-top: 1.5em; }
 
 .hentry {
-  background-color: #fff;
+  background-color: #ffff;
   border-radius: 3px;
   margin-bottom: 1.5em;
   border: 1px solid #ccc; }
@@ -1554,7 +1633,7 @@ PAGE NAVI STYLES
   text-align: center; }
   .pagination ul {
     display: inline-block;
-    background-color: #fff;
+    background-color: #ffff;
     white-space: nowrap;
     padding: 0;
     clear: both;
@@ -1579,12 +1658,12 @@ PAGE NAVI STYLES
     color: #2980b9; }
     .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
       background-color: #2980b9;
-      color: #fff; }
+      color: #ffff; }
   .pagination .current {
     cursor: default;
     color: #5c6b80; }
     .pagination .current:hover, .pagination .current:focus {
-      background-color: #fff;
+      background-color: #ffff;
       color: #5c6b80; }
 
 /* end .bones_page_navi */
@@ -1656,7 +1735,7 @@ COMMENT STYLES
     margin-left: 7px;
     padding: 7px; }
   .comment.odd {
-    background-color: #fff; }
+    background-color: #ffff; }
   .comment.even {
     background: #f8f9fa; }
 
@@ -1732,31 +1811,13 @@ SIDEBARS & ASIDES
   /* deep nesting */ }
 
 .no-widgets {
-  background-color: #fff;
+  background-color: #ffff;
   padding: 1.5em;
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 2px;
   margin-bottom: 1.5em; }
 
-/*********************
-FOOTER STYLES
-*********************/
-.footer {
-  clear: both;
-  background-color: #323944;
-  color: #f8f9fa; }
-
-/*
-if you checked out the link above:
-http://www.alistapart.com/articles/organizing-mobile/
-you'll want to style the footer nav
-a bit more in-depth. Remember to keep
-it simple because you'll have to
-override these styles for the desktop
-view.
-*/
-/* end .footer-links */
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -1859,6 +1920,17 @@ you can add resource intensive styles.
   /*********************
   GENERAL STYLES
   *********************/
+  .your-name,
+  .your-email {
+    float: left;
+    width: 48%; }
+
+  .your-name {
+    padding-right: 0.938rem; }
+
+  .your-eamil {
+    padding-left: 0.938rem; }
+
   /*********************
   LAYOUT & GRID STYLES
   *********************/
@@ -1869,6 +1941,17 @@ you can add resource intensive styles.
   HEADER STYLES
   *********************/
   /*********************
+  HOMEPAGE STYLES
+  *********************/
+  .flex-resume {
+    margin-left: 100px; }
+    .flex-resume .flex-row {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+
+  /*********************
   NAVIGATION STYLES
   *********************/
   .menu-sandwich {
@@ -1877,7 +1960,8 @@ you can add resource intensive styles.
   .sidenav {
     width: 500px !important;
     background-color: transparent;
-    padding-top: 5px; }
+    padding-top: 5px;
+    position: absolute; }
     .sidenav .closebtn {
       display: none; }
     .sidenav li {
@@ -1900,13 +1984,15 @@ you can add resource intensive styles.
       */
       /* showing sub-menus */ }
       .nav li a {
+        font-size: 1.250em;
         border-bottom: 0;
+        color: #323944;
         /*
         you can use hover styles here even though this size
         has the possibility of being a mobile device.
         */ }
         .nav li a:hover, .nav li a:focus {
-          color: #fff;
+          color: #111111;
           text-decoration: underline; }
       .nav li ul.sub-menu,
       .nav li ul.children {
@@ -1974,6 +2060,14 @@ you can add resource intensive styles.
   /* recent-comments widget */
   /* search widget */
   /* text widget */
+  /*********************
+  HEADER STYLES
+  *********************/
+  #logo-descr {
+    font-size: 4.375rem;
+    color: chartreuse;
+    width: 80%; }
+
   /*********************
   FOOTER STYLES
   *********************/
@@ -2140,6 +2234,18 @@ be set to display none.
   nav {
     display: none; } }
 /*********************
+GENERAL STYLES
+*********************/
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #5c6b80;
+  background-color: #ffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*********************
 NAVIGATION STYLES
 *********************/
 /*
@@ -2165,19 +2271,122 @@ and more scalable.
     */ }
     .nav li a {
       display: block;
-      color: #9fa6b4;
       text-decoration: none;
       padding: 0.75em;
+      margin-top: 0.938em;
       /*
       remember this is for mobile ONLY, so there's no need
       to even declare hover styles here, you can do it in
       the style.scss file where it's relevant. We want to
       keep this file as small as possible!
       */ }
-      .nav li a:hover, .nav li a:focus {
-        color: #fff; }
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
       padding-left: 30px; }
 
 /* end .nav */
+/*********************
+HEADER STYLES
+*********************/
+.home .parallax, .blog .parallax {
+  height: 100%;
+  background-attachment: fixed; }
+
+.home .header {
+  background-image: url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/testimage.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  border: #eaedf2 solid 0.125rem; }
+  @media all and (min-width: 1240px) {
+    .home .header {
+      height: 900px; } }
+
+.header {
+  background-color: #323944; }
+
+#logo {
+  margin: 0.75rem 0;
+  font-size: 2.813rem;
+  font-weight: bold; }
+  #logo a {
+    color: #111111;
+    text-decoration: none; }
+
+/*********************
+HOMEPAGE STYLES
+*********************/
+.home .hentry {
+  border-radius: 0;
+  border: none; }
+.home .d-5of7 {
+  max-width: 100%;
+  width: 100%;
+  float: none;
+  padding-right: auto;
+  padding-left: auto; }
+  .home .d-5of7 .entry-content p {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-family: europa;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: -.01em;
+    line-height: 32px; }
+
+.featured-image-home img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 3em;
+  border: 0; }
+
+.page-title {
+  text-align: center;
+  font-size: 3.125rem;
+  font-weight: bold; }
+
+/*********************
+FOOTER STYLES
+*********************/
+.footer {
+  clear: both;
+  background-color: #323944;
+  color: #f8f9fa; }
+
+.nav.footer-nav a {
+  color: #f8f9fa; }
+  .nav.footer-nav a:hover, .nav.footer-nav a:focus {
+    color: #ffff; }
+
+#menu-footer,
+.copyright,
+.shameless-plug {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/*
+if you checked out the link above:
+http://www.alistapart.com/articles/organizing-mobile/
+you'll want to style the footer nav
+a bit more in-depth. Remember to keep
+it simple because you'll have to
+override these styles for the desktop
+view.
+*/
+/* end .footer-links */
+.shameless-plug a {
+  color: #ebe16f;
+  text-decoration: none;
+  text-align: center; }
+  .shameless-plug a:hover {
+    text-decoration: underline; }
