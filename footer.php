@@ -1,3 +1,6 @@
+
+
+			
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 				<div id="inner-footer" class="wrap cf">
@@ -23,13 +26,25 @@
 				</div>
 
 			</footer>
+			</div><!-- End container -->
 
-		</div>
-
+</div><!-- End #main container -->
 		<?php // Opens/closes mobile nav ?>
+		
 		<script>
-			function openNav() {document.getElementById("mySidenav").style.width = "250px";}
-			function closeNav() {document.getElementById("mySidenav").style.width = "0";}
+			/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "50%";
+			//document.getElementById("navOuter").style.marginRight = "50%";
+			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+
+		/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("navOuter").style.marginRight = "0";
+			document.body.style.backgroundColor = "white";
+		} 
 		</script>
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
