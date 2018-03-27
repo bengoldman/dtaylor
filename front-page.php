@@ -85,7 +85,7 @@
 </div>
 
 <div>
-	<h1 class="h1x" style="text-align: center;">Some great times doing what I love.</h1>
+	<h1 class="h1x goodtimes">Some great times doing what I love.</h1>
 </div>
 
 <?php get_footer(); ?>
