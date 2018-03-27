@@ -271,8 +271,13 @@ HEADER STYLES
 /*********************
 HOMEPAGE STYLES
 *********************/
+.resume-title {
+  text-align: left; }
+
 .flex-resume {
-  margin-left: 100px; }
+  width: 90%;
+  margin-top: 3em;
+  border: 0; }
   .flex-resume .flex-row {
     flex-direction: row; }
 
@@ -419,8 +424,21 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
-.wrap {
-  width: 1040px; }
+.flex-resume {
+  width: 50%; }
+
+/*********************
+PAGE STYLES
+*********************/
+.page-id-10 .t-2of3 {
+  width: 60%;
+  padding-right: 01.563rem; }
+.page-id-10 .sidebar {
+  width: 40%;
+  padding-left: 01.563rem; }
+
+.sidenav {
+  height: 100px; }
 
 /*
 you can call the larger styles if you want, but there's really no need

@@ -9,3 +9,13 @@ on larger screens.
 
 ******************************************************************/
 
+//Contact Page at largest sizes
+
+.page-id-10 {
+
+    #inner-content.wrap {
+        @media only screen and (min-width: 1800px) {
+            width: 60%;
+        }
+	}
+}

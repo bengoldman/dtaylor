@@ -979,7 +979,7 @@ textarea,
   padding: 0 12px;
   margin-bottom: 14px;
   font-size: 1em;
-  color: #5c6b80;
+  color: #4d4d4d;
   border-radius: 3px;
   vertical-align: middle;
   -webkit-box-shadow: none;
@@ -1373,18 +1373,15 @@ a, a:visited {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
 
 /*********************
-HEADER STYLES
-*********************/
-#logo-descr {
-  font-size: 3.438rem;
-  color: chartreuse;
-  width: 100%; }
-
-/*********************
 HOMEPAGE STYLES
 *********************/
+.resume-title {
+  text-align: center;
+  padding: 0.938rem; }
+
 .flex-resume {
-  width: 90%; }
+  margin-left: auto;
+  margin-right: auto; }
 
 .flex-row {
   display: -webkit-box;
@@ -1395,7 +1392,8 @@ HOMEPAGE STYLES
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-bottom: dotted 1px; }
+  border-bottom: dotted 1px;
+  padding: 40px; }
   .flex-row:last-child {
     border: none; }
   .flex-row .flex-item1, .flex-row .flex-item2 {
@@ -1406,6 +1404,9 @@ HOMEPAGE STYLES
       width: 100% !important;
       text-align: left !important; }
 
+/*********************
+PAGE STYLES
+*********************/
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
@@ -1423,6 +1424,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
   font-size: 2.5em;
   line-height: 1.333em; }
+
+.h1x {
+  font-size: 3.125rem;
+  line-height: 1.444em;
+  font-weight: bold; }
 
 h2, .h2 {
   font-size: 1.75em;
@@ -1661,10 +1667,10 @@ PAGE NAVI STYLES
       color: #ffff; }
   .pagination .current {
     cursor: default;
-    color: #5c6b80; }
+    color: #4d4d4d; }
     .pagination .current:hover, .pagination .current:focus {
       background-color: #ffff;
-      color: #5c6b80; }
+      color: #4d4d4d; }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
@@ -1775,7 +1781,7 @@ COMMENT FORM STYLES
   font-style: italic;
   margin: 0; }
   .logged-in-as a {
-    color: #5c6b80; }
+    color: #4d4d4d; }
 
 .comment-form-comment {
   margin: 1.5em 0 0.75em; }
@@ -1943,8 +1949,13 @@ you can add resource intensive styles.
   /*********************
   HOMEPAGE STYLES
   *********************/
+  .resume-title {
+    text-align: left; }
+
   .flex-resume {
-    margin-left: 100px; }
+    width: 90%;
+    margin-top: 3em;
+    border: 0; }
     .flex-resume .flex-row {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -2101,8 +2112,21 @@ you can add resource intensive styles.
   be seen on the Desktop.
   
   ******************************************************************/
-  .wrap {
-    width: 1040px; } }
+  .flex-resume {
+    width: 50%; }
+
+  /*********************
+  PAGE STYLES
+  *********************/
+  .page-id-10 .t-2of3 {
+    width: 60%;
+    padding-right: 01.563rem; }
+  .page-id-10 .sidebar {
+    width: 40%;
+    padding-left: 01.563rem; }
+
+  .sidenav {
+    height: 100px; } }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
@@ -2118,6 +2142,10 @@ This is for the larger monitors and possibly full screen viewers.
   on larger screens.
   
   ******************************************************************/ }
+@media only screen and (min-width: 1240px) and (min-width: 1800px) {
+  .page-id-10 #inner-content.wrap {
+    width: 60%; } }
+
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
@@ -2240,7 +2268,7 @@ body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #5c6b80;
+  color: #4d4d4d;
   background-color: #ffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -2303,15 +2331,22 @@ HEADER STYLES
       height: 900px; } }
 
 .header {
-  background-color: #323944; }
+  background-color: lightblue; }
 
 #logo {
   margin: 0.75rem 0;
+  padding-left: 01.563rem;
   font-size: 2.813rem;
   font-weight: bold; }
   #logo a {
     color: #111111;
     text-decoration: none; }
+
+#logo-descr {
+  padding-left: 01.563rem;
+  font-size: 3.438rem;
+  color: chartreuse;
+  width: 100%; }
 
 /*********************
 HOMEPAGE STYLES
@@ -2347,6 +2382,28 @@ HOMEPAGE STYLES
   text-align: center;
   font-size: 3.125rem;
   font-weight: bold; }
+
+.resume-container {
+  background: #f8f9fa; }
+
+/*********************
+PAGE STYLES
+*********************/
+.page-id-10 .wrap {
+  width: 80%; }
+.page-id-10 .hentry {
+  border: none;
+  margin-bottom: 0; }
+.page-id-10 footer.article-footer {
+  border-top: none; }
+@media only screen and (max-width: 1100px) {
+  .page-id-10 .wrap {
+    width: 90%; }
+    .page-id-10 .wrap .t-2of3 {
+      width: 90%; }
+    .page-id-10 .wrap .sidebar {
+      width: 90%;
+      padding: 01.563rem; } }
 
 /*********************
 FOOTER STYLES

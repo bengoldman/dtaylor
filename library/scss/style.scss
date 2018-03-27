@@ -264,11 +264,13 @@ HEADER STYLES
 }
 
 .header {
-	background-color: $black;
+	background-color: lightblue;
 }
 
 #logo {
 	margin: 0.75rem 0;
+	padding-left: 01.563rem;
+
 	font-size: 2.813rem;
 	font-weight: bold;
 
@@ -278,7 +280,14 @@ HEADER STYLES
 	}
 }
 
+#logo-descr {
 
+	padding-left: 01.563rem;
+	font-size: 3.438rem;
+	color: chartreuse;
+	width: 100%;
+
+}
 
 
 /*********************
@@ -327,6 +336,52 @@ HOMEPAGE STYLES
 	font-weight: bold;
 }
 
+
+.resume-container {
+	background: $light-gray;
+}
+
+
+/*********************
+PAGE STYLES
+*********************/
+
+// CONTACT PAGE
+
+.page-id-10 {
+
+	.wrap {
+		width: 80%;
+	}
+
+	.hentry {
+		border: none;
+		margin-bottom: 0;
+	}
+
+	footer.article-footer {
+		border-top: none;
+	}
+
+	@media only screen and (max-width: 1100px) {
+
+		.wrap {
+			width: 90%;
+
+			.t-2of3 {
+				width: 90%;
+			}
+
+			.sidebar {
+				width: 90%;
+				padding: 01.563rem;
+			}
+		}
+	}
+}
+
+
+
 /*********************
 FOOTER STYLES
 *********************/
@@ -341,7 +396,7 @@ FOOTER STYLES
 
 		a {
 			color: $light-gray;
-			
+
 			&:hover, &:focus {
 				color: $white;
 			}

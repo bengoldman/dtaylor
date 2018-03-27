@@ -2,9 +2,9 @@
 <!-- THE HOME PAGE -->
 <?php get_header(); ?>
 
-			<div id="content">
+<div id="content">
 
-<div id="inner-content" class="wrap cf">
+	<div id="inner-content" class="wrap cf">
 
 		<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
@@ -14,52 +14,79 @@
 
 				<header class="article-header">
 
-					<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1> 
+					<h1 class="page-title h1x" itemprop="headline"><?php the_title(); ?></h1> 
 					<div class="featured-image-home"> <?php the_post_thumbnail( 'bones-thumb-300' ); ?> </div>
 
 				</header> <?php // end article header ?>
 
-				<section class="entry-content cf" itemprop="articleBody">
-					<?php
-						// the content (pretty self explanatory huh)
-						the_content();
 
-						/*
-						 * Link Pages is used in case you have posts that are set to break into
-						 * multiple pages. You can remove this if you don't plan on doing that.
-						 *
-						 * Also, breaking content up into multiple pages is a horrible experience,
-						 * so don't do it. While there are SOME edge cases where this is useful, it's
-						 * mostly used for people to get more ad views. It's up to you but if you want
-						 * to do it, you're wrong and I hate you. (Ok, I still love you but just not as much)
-						 *
-						 * http://gizmodo.com/5841121/google-wants-to-help-you-avoid-stupid-annoying-multiple-page-articles
-						 *
-						*/
-						wp_link_pages( array(
-							'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bonestheme' ) . '</span>',
-							'after'       => '</div>',
-							'link_before' => '<span>',
-							'link_after'  => '</span>',
-						) );
-					?>
-				</section> <?php // end article section ?>
 
 				<footer class="article-footer cf">
 
 				</footer>
 
 				<?php comments_template(); ?>
+				<div style="width: 60%;text-align: center;margin-left: auto;margin-right: auto;"><p>Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Nunc mattis enim ut tellus elementum sagittis vitae. Turpis nunc eget lorem dolor sed viverra. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Eleifend mi in nulla posuere sollicitudin aliquam ultrices. Porta nibh venenatis cras sed felis eget velit aliquet sagittis. Sed libero enim sed faucibus turpis in eu mi bibendum. Gravida arcu ac tortor dignissim convallis aenean et. Tempor commodo ullamcorper a lacus vestibulum.</p></div>
 
 			</article>
 
 			<?php endwhile; endif; ?>
+			
 
 		</main>
+		
+
+	</div>
 
 </div>
-
+<div class="resume-container">
+					<div style="padding: 5px"></div>
+					<div style="clear: both;"></div>
+					<div class="flex-resume">
+					<H1 class="h1x resume-title">Here are a few of the places where I've worked.</H1>
+						<div class="flex-row">
+							<div class="flex-item1 h3"><span>2000 - whenever</span></div>
+							<div class="flex-item2 h3"><span style="color:#111;">THEATRE COMPANY NAME</span>
+							<div style="padding: 5px"></div>
+								<p>Name of production or whatever you want.</p>
+							</div>
+						</div>
+						<div class="flex-row">
+							<div class="flex-item1 h3"><span>2000 - whenever</span></div>
+							<div class="flex-item2 h3"><span style="color:#111;">THEATRE COMPANY NAME</span>
+							<div style="padding: 5px"></div>
+								<p>Name of production or whatever you want.</p>
+							</div>
+						</div>
+						<div class="flex-row">
+							<div class="flex-item1 h3"><span>2000 - whenever</span></div>
+							<div class="flex-item2 h3"><span style="color:#111;">THEATRE COMPANY NAME</span>
+							<div style="padding: 5px"></div>
+								<p>Name of production or whatever you want.</p>
+							</div>
+						</div>
+						<div class="flex-row">
+							<div class="flex-item1 h3"><span>2000 - whenever</span></div>
+							<div class="flex-item2 h3"><span style="color:#111;">THEATRE COMPANY NAME</span>
+							<div style="padding: 5px"></div>
+								<p>Name of production or whatever you want.</p>
+							</div>
+						</div>
+						<div class="flex-row">
+							<div class="flex-item1 h3"><span>2000 - whenever</span></div>
+							<div class="flex-item2 h3"><span style="color:#111;">THEATRE COMPANY NAME</span>
+							<div style="padding: 5px"></div>
+								<p>Name of production or whatever you want.</p>
+							</div>
+						</div>
+					</div>
+					<div style="text-align: center;">Click <a href="wp-content/uploads/2018/02/dtaylor_cv.pdf">here</a> to download/view my complete resume.</div>
+					<div style="padding: 20px"></div>
 </div>
 
+<div>
+	<h1 class="h1x" style="text-align: center;">Some great times doing what I love.</h1>
+</div>
 
 <?php get_footer(); ?>
+

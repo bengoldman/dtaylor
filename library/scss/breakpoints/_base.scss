@@ -89,41 +89,34 @@ a, a:visited {
 	}
 }
 
-/*********************
-HEADER STYLES
-*********************/
-
-#logo-descr {
-
-	font-size: 3.438rem;
-	color: chartreuse;
-	width: 100%;
-
-	p {
-		
-	}
-}
 
 /*********************
 HOMEPAGE STYLES
 *********************/
 
+.resume-title {
+	text-align: center;
+	padding: 0.938rem;
+}
+
 .flex-resume {
-	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .flex-row {
 	display: flex;
 	position: relative;
 	flex-direction: column;
 	border-bottom: dotted 1px;
+	padding: 40px;
 
 	&:last-child {
 		border: none;
 	}
 
 	.flex-item1, .flex-item2 {
-		flex: 1;
 
+		flex: 1;
 		p {
 			width: 100% !important;
 			text-align: left !important;
@@ -131,6 +124,14 @@ HOMEPAGE STYLES
 	}
 
 }
+
+/*********************
+PAGE STYLES
+*********************/
+
+// Contact Page
+
+
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
@@ -153,6 +154,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
+}
+
+.h1x {
+	font-size: 3.125rem;
+	line-height: 1.444em;
+	font-weight: bold;
 }
 
 h2, .h2 {

@@ -9,6 +9,31 @@ be seen on the Desktop.
 
 ******************************************************************/
 
-.wrap {
-  width: 1040px;
+
+.flex-resume {
+  width: 50%;
+}
+
+/*********************
+PAGE STYLES
+*********************/
+
+// Contact Page
+
+.page-id-10 {
+
+	.t-2of3 {
+    width: 60%;
+    padding-right: 01.563rem;
+	}
+
+	.sidebar {
+    width: 40%;
+    padding-left: 01.563rem;
+	}
+
+}
+
+.sidenav {
+  height: 100px; // Keeps mobile layer from covering form.
 }
