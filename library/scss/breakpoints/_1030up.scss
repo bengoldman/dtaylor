@@ -9,8 +9,19 @@ be seen on the Desktop.
 
 ******************************************************************/
 
+/*********************
+HOMEPAGE STYLES
+*********************/
 
 .flex-resume {
+  width: 70%;
+}
+
+.hentry header {
+  width: 70%;
+}
+
+.goodtimes {
   width: 70%;
 }
 
@@ -34,6 +45,4 @@ PAGE STYLES
 
 }
 
-.sidenav {
-  height: 100px; // Keeps mobile layer from covering form.
-}
+

@@ -96,7 +96,7 @@ HOMEPAGE STYLES
 
 .resume-title {
 	text-align: center;
-	padding: 0.938rem;
+	padding: 1.563rem;
 }
 
 .flex-resume {
@@ -109,6 +109,7 @@ HOMEPAGE STYLES
 	flex-direction: column;
 	border-bottom: dotted 1px;
 	padding: 40px;
+	font-size: 1.375rem;
 
 	&:last-child {
 		border: none;
@@ -122,6 +123,40 @@ HOMEPAGE STYLES
 			text-align: left !important;
 		}
 	}
+
+}
+
+.goodtimes {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 1.563rem;
+}
+
+/*********************
+HOEADER STYLES
+*********************/
+
+#logo {
+
+	font-size: 2.813rem;
+	font-weight: bold;
+
+	a {
+		color: $white;
+		//mix-blend-mode: difference;
+		text-decoration: none;
+	}
+}
+
+#logo-descr {
+
+	font-size: 2.813rem;
+	font-weight: bold;
+	color: $white;
+	//mix-blend-mode: difference;
+	width: 100%;
 
 }
 
@@ -164,6 +199,7 @@ h1, .h1 {
 
 h2, .h2 {
 	font-size: 1.75em;
+	font-weight: bold;
 	line-height: 1.4em;
 	margin-bottom: 0.375em;
 }
@@ -191,7 +227,7 @@ MOBILE NAV STYLES
  //the side navigation menu for mobile 
 
  .menu-sandwich {
-	 color: $super-black;
+	 color: $white;
 	 position: absolute; 
 	 top: 0;
 	 right: 10px; 
@@ -201,8 +237,8 @@ MOBILE NAV STYLES
 	 cursor: pointer;
  }
  .sidenav {
-    height: 100%;
-    width: 0; // Hides nav on load for mobile.
+	height: 100%;
+	width: 0; // Hides nav on load for mobile.
     position: fixed;
     z-index: 1;
     top: 0;
@@ -233,13 +269,6 @@ MOBILE NAV STYLES
 
 }
 
-.nav li a {
-	color: $white;
-
-	&:hover {
-		color:	$white;
-	}
-}
 
 @media screen and (max-height: 480px) {
   .sidenav {padding-top: 15px;}

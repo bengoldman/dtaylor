@@ -37,11 +37,11 @@ body {}
 
 /*********************
 LAYOUT & GRID STYLES
-*********************/
-
+********************
 .wrap {
 	width: 760px;
 }
+*/
 
 /*********************
 HEADER STYLES
@@ -54,6 +54,21 @@ HEADER STYLES
 /*********************
 HOMEPAGE STYLES
 *********************/
+
+.home {
+	.hentry {
+
+		header {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.page-title {
+			text-align: left;
+		}
+	}
+}
+
+
 
 .resume-title {
 	text-align: left;
@@ -69,134 +84,9 @@ HOMEPAGE STYLES
 	}
 }
 
-
-/*********************
-NAVIGATION STYLES
-*********************/
-
-//Mobile styles adjusted for desktop
-.menu-sandwich {
-	display: none;
+.goodtimes {
+	text-align: left;
 }
-
-.sidenav {
-	width: 500px !important;
-	background-color: transparent;
-	padding-top: 5px;
-	position: absolute; //change to 'fixed' to unstick nav.  Or, just delete since fixed is declared at base.
-	
-	.closebtn {
-		display: none;
-	}
-
-	li {
-		line-height: 1.5;
-		border-bottom: none;
-	}
-}
-
-
-//End mobile adjustments.
-
-.nav {
-	border: 0;
-	ul {
-		background:$black;
-		margin-top:0;
-	}
-	li {
-		float: left;
-		position: relative;
-
-		a {
-			font-size: 1.250em;
-			border-bottom: 0;
-			color: $black;
-
-			/*
-			you can use hover styles here even though this size
-			has the possibility of being a mobile device.
-			*/
-			&:hover, &:focus {
-				color: $super-black;
-				text-decoration: underline;
-			}
-		}
-
-		&:first-child {}
-		&:last-child {}
-
-		/*
-		plan your menus and drop-downs wisely.
-		*/
-		ul.sub-menu,
-		ul.children {
-			margin-top: 0;
-			border: 1px solid #ccc;
-			border-top: 0;
-			position: absolute;
-			visibility: hidden;
-			z-index: 8999;
-
-			li {
-
-				a {
-					padding-left: 10px;
-					border-right: 0;
-					display: block;
-					width: 180px;
-					border-bottom: 1px solid #ccc;
-
-					&:hover,
-					&:focus {}
-
-					&:link {}
-				}
-
-				&:first-child {}
-
-				&:last-child {
-
-					a {
-						border-bottom: 0;
-					}
-				}
-
-				/*
-				if you need to go deeper, go nuts
-				just remember deeper menus suck
-				for usability. k, bai.
-				*/
-				ul {
-					top:0;
-					left:100%;
-				}
-			}
-
-			/* highlight sub-menu current page */
-			li.current-menu-item,
-			li.current_page_item,
-			li.current_page_ancestor {
-				a {}
-			}
-		}
-
-		/* showing sub-menus */
-		&:hover > ul {
-			top: auto;
-			visibility:visible;
-		}
-
-	} /* end .menu ul li */
-
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current_page_ancestor {
-		a {}
-	}  /* end current highlighters */
-
-} /* end .nav */
 
 /*********************
 SIDEBARS & ASIDES
@@ -329,12 +219,8 @@ HEADER STYLES
 #logo-descr {
 
 	font-size: 4.375rem;
-	color: chartreuse;
 	width: 80%;
 
-	p {
-		
-	}
 }
 
 

@@ -151,7 +151,7 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $lato;
+	font-family: europa;
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
@@ -185,15 +185,12 @@ and more scalable.
 			text-decoration: none;
 			padding: 0.75em;
 			margin-top: 0.938em;
+			color: $white;
+			//mix-blend-mode: difference;
 
-			/*
-			remember this is for mobile ONLY, so there's no need
-			to even declare hover styles here, you can do it in
-			the style.scss file where it's relevant. We want to
-			keep this file as small as possible!
-			*/
-			&:hover, &:focus {
-
+			&:hover {
+				color:	$white;
+				text-decoration: underline;
 			}
 		}
 
@@ -248,46 +245,36 @@ and more scalable.
 HEADER STYLES
 *********************/
 
-.home .parallax, .blog .parallax {
-	height: 100%; 
-	background-attachment: fixed;
-}
+.home {
 
-.home .header, {
-	background-image: url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/testimage.jpeg");
-	background-size: cover;
-	background-position: center;
-	height: 600px;
-	border: $gray solid 0.125rem;
-		@media all and (min-width: 1240px) { 
-			height: 900px; }
+	.parallax, .blog .parallax {
+		height: 100%; 
+		background-attachment: fixed;
+	}
+	
+	.header, {
+		background-image: url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg");
+		background-size: cover;
+		background-position: center;
+		height: 600px;
+		border: $gray solid 0.125rem;
+			@media all and (min-width: 1240px) { 
+				height: 900px; }
+	}
+	.darken {
+		background-image: 
+		  linear-gradient(
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		  ),
+		  url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg");
+	  }
 }
 
 .header {
 	background-color: lightblue;
 }
 
-#logo {
-	margin: 0.75rem 0;
-	padding-left: 01.563rem;
-
-	font-size: 2.813rem;
-	font-weight: bold;
-
-	a {
-		color: $super-black;
-		text-decoration: none;
-	}
-}
-
-#logo-descr {
-
-	padding-left: 01.563rem;
-	font-size: 3.438rem;
-	color: chartreuse;
-	width: 100%;
-
-}
 
 
 /*********************
@@ -299,6 +286,10 @@ HOMEPAGE STYLES
 	.hentry {
 		border-radius: 0;
 		border: none;
+
+		header {
+			padding: 1.5rem 0;
+		}
 	}
 
 	.d-5of7 {
@@ -332,8 +323,7 @@ HOMEPAGE STYLES
 
 .page-title {
 	text-align: center;
-	font-size: 3.125rem;
-	font-weight: bold;
+	padding: 0.938rem 0;
 }
 
 
@@ -341,13 +331,7 @@ HOMEPAGE STYLES
 	background: $light-gray;
 }
 
-.goodtimes {
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	width: 70%;
-}
+
 
 
 /*********************

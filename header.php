@@ -67,7 +67,7 @@
 		<span class="menu-sandwich" onclick="openNav()">&#9776;</span>
 		
 		<div id="container">
-		<header class="header parallax" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+		<header class="header parallax darken" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
 			<div id="inner-header" class="wrap cf">
 

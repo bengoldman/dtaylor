@@ -1377,7 +1377,7 @@ HOMEPAGE STYLES
 *********************/
 .resume-title {
   text-align: center;
-  padding: 0.938rem; }
+  padding: 1.563rem; }
 
 .flex-resume {
   margin-left: auto;
@@ -1393,7 +1393,8 @@ HOMEPAGE STYLES
       -ms-flex-direction: column;
           flex-direction: column;
   border-bottom: dotted 1px;
-  padding: 40px; }
+  padding: 40px;
+  font-size: 1.375rem; }
   .flex-row:last-child {
     border: none; }
   .flex-row .flex-item1, .flex-row .flex-item2 {
@@ -1403,6 +1404,29 @@ HOMEPAGE STYLES
     .flex-row .flex-item1 p, .flex-row .flex-item2 p {
       width: 100% !important;
       text-align: left !important; }
+
+.goodtimes {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 1.563rem; }
+
+/*********************
+HOEADER STYLES
+*********************/
+#logo {
+  font-size: 2.813rem;
+  font-weight: bold; }
+  #logo a {
+    color: #ffff;
+    text-decoration: none; }
+
+#logo-descr {
+  font-size: 2.813rem;
+  font-weight: bold;
+  color: #ffff;
+  width: 100%; }
 
 /*********************
 PAGE STYLES
@@ -1432,6 +1456,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 1.75em;
+  font-weight: bold;
   line-height: 1.4em;
   margin-bottom: 0.375em; }
 
@@ -1452,7 +1477,7 @@ h5, .h5 {
 MOBILE NAV STYLES
 ******************************************************************/
 .menu-sandwich {
-  color: #111111;
+  color: #ffff;
   position: absolute;
   top: 0;
   right: 10px;
@@ -1487,11 +1512,6 @@ MOBILE NAV STYLES
     font-size: 25px;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
-
-.nav li a {
-  color: #ffff; }
-  .nav li a:hover {
-    color: #ffff; }
 
 @media screen and (max-height: 480px) {
   .sidenav {
@@ -1939,16 +1959,23 @@ you can add resource intensive styles.
 
   /*********************
   LAYOUT & GRID STYLES
-  *********************/
+  ********************
   .wrap {
-    width: 760px; }
-
+  	width: 760px;
+  }
+  */
   /*********************
   HEADER STYLES
   *********************/
   /*********************
   HOMEPAGE STYLES
   *********************/
+  .home .hentry header {
+    margin-left: auto;
+    margin-right: auto; }
+  .home .hentry .page-title {
+    text-align: left; }
+
   .resume-title {
     text-align: left; }
 
@@ -1962,84 +1989,9 @@ you can add resource intensive styles.
           -ms-flex-direction: row;
               flex-direction: row; }
 
-  /*********************
-  NAVIGATION STYLES
-  *********************/
-  .menu-sandwich {
-    display: none; }
+  .goodtimes {
+    text-align: left; }
 
-  .sidenav {
-    width: 500px !important;
-    background-color: transparent;
-    padding-top: 5px;
-    position: absolute; }
-    .sidenav .closebtn {
-      display: none; }
-    .sidenav li {
-      line-height: 1.5;
-      border-bottom: none; }
-
-  .nav {
-    border: 0;
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */ }
-    .nav ul {
-      background: #323944;
-      margin-top: 0; }
-    .nav li {
-      float: left;
-      position: relative;
-      /*
-      plan your menus and drop-downs wisely.
-      */
-      /* showing sub-menus */ }
-      .nav li a {
-        font-size: 1.250em;
-        border-bottom: 0;
-        color: #323944;
-        /*
-        you can use hover styles here even though this size
-        has the possibility of being a mobile device.
-        */ }
-        .nav li a:hover, .nav li a:focus {
-          color: #111111;
-          text-decoration: underline; }
-      .nav li ul.sub-menu,
-      .nav li ul.children {
-        margin-top: 0;
-        border: 1px solid #ccc;
-        border-top: 0;
-        position: absolute;
-        visibility: hidden;
-        z-index: 8999;
-        /* highlight sub-menu current page */ }
-        .nav li ul.sub-menu li,
-        .nav li ul.children li {
-          /*
-          if you need to go deeper, go nuts
-          just remember deeper menus suck
-          for usability. k, bai.
-          */ }
-          .nav li ul.sub-menu li a,
-          .nav li ul.children li a {
-            padding-left: 10px;
-            border-right: 0;
-            display: block;
-            width: 180px;
-            border-bottom: 1px solid #ccc; }
-          .nav li ul.sub-menu li:last-child a,
-          .nav li ul.children li:last-child a {
-            border-bottom: 0; }
-          .nav li ul.sub-menu li ul,
-          .nav li ul.children li ul {
-            top: 0;
-            left: 100%; }
-      .nav li:hover > ul {
-        top: auto;
-        visibility: visible; }
-
-  /* end .nav */
   /*********************
   SIDEBARS & ASIDES
   *********************/
@@ -2076,7 +2028,6 @@ you can add resource intensive styles.
   *********************/
   #logo-descr {
     font-size: 4.375rem;
-    color: chartreuse;
     width: 80%; }
 
   /*********************
@@ -2112,7 +2063,16 @@ you can add resource intensive styles.
   be seen on the Desktop.
   
   ******************************************************************/
+  /*********************
+  HOMEPAGE STYLES
+  *********************/
   .flex-resume {
+    width: 70%; }
+
+  .hentry header {
+    width: 70%; }
+
+  .goodtimes {
     width: 70%; }
 
   /*********************
@@ -2123,10 +2083,7 @@ you can add resource intensive styles.
     padding-right: 01.563rem; }
   .page-id-10 .sidebar {
     width: 40%;
-    padding-left: 01.563rem; }
-
-  .sidenav {
-    height: 100px; } }
+    padding-left: 01.563rem; } }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
@@ -2141,11 +2098,100 @@ This is for the larger monitors and possibly full screen viewers.
   You can add some advanced styles here if you like. This kicks in
   on larger screens.
   
-  ******************************************************************/ }
+  ******************************************************************/
+  /*********************
+  HOMEPAGE STYLES
+  *********************/
+  #logo {
+    margin: 100px;
+    font-size: 80px; }
+
+  #logo-descr {
+    margin: 100px;
+    font-size: 100px;
+    width: 50%; } }
 @media only screen and (min-width: 1240px) and (min-width: 1800px) {
   .page-id-10 #inner-content.wrap {
     width: 60%; } }
 
+@media only screen and (min-width: 1240px) {
+  /*********************
+  NAVIGATION STYLES
+  *********************/
+  .menu-sandwich {
+    display: none; }
+
+  .sidenav {
+    width: 500px !important;
+    height: 100px;
+    background-color: transparent;
+    padding-top: 5px;
+    position: absolute; }
+    .sidenav .closebtn {
+      display: none; }
+    .sidenav li {
+      line-height: 1.5;
+      border-bottom: none; }
+
+  .nav {
+    border: 0;
+    /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */ }
+    .nav ul {
+      background: #323944;
+      margin-top: 0; }
+    .nav li {
+      float: left;
+      position: relative;
+      /*
+      plan your menus and drop-downs wisely.
+      */
+      /* showing sub-menus */ }
+      .nav li a {
+        border-bottom: 0;
+        /*
+        you can use hover styles here even though this size
+        has the possibility of being a mobile device.
+        */ }
+        .nav li a:hover, .nav li a:focus {
+          color: #ffff;
+          text-decoration: underline; }
+      .nav li ul.sub-menu,
+      .nav li ul.children {
+        margin-top: 0;
+        border: 1px solid #ccc;
+        border-top: 0;
+        position: absolute;
+        visibility: hidden;
+        z-index: 8999;
+        /* highlight sub-menu current page */ }
+        .nav li ul.sub-menu li,
+        .nav li ul.children li {
+          /*
+          if you need to go deeper, go nuts
+          just remember deeper menus suck
+          for usability. k, bai.
+          */ }
+          .nav li ul.sub-menu li a,
+          .nav li ul.children li a {
+            padding-left: 10px;
+            border-right: 0;
+            display: block;
+            width: 180px;
+            border-bottom: 1px solid #ccc; }
+          .nav li ul.sub-menu li:last-child a,
+          .nav li ul.children li:last-child a {
+            border-bottom: 0; }
+          .nav li ul.sub-menu li ul,
+          .nav li ul.children li ul {
+            top: 0;
+            left: 100%; }
+      .nav li:hover > ul {
+        top: auto;
+        visibility: visible; }
+
+  /* end .nav */ }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
@@ -2265,7 +2311,7 @@ be set to display none.
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: europa;
   font-size: 100%;
   line-height: 1.5;
   color: #4d4d4d;
@@ -2302,12 +2348,10 @@ and more scalable.
       text-decoration: none;
       padding: 0.75em;
       margin-top: 0.938em;
-      /*
-      remember this is for mobile ONLY, so there's no need
-      to even declare hover styles here, you can do it in
-      the style.scss file where it's relevant. We want to
-      keep this file as small as possible!
-      */ }
+      color: #ffff; }
+      .nav li a:hover {
+        color: #ffff;
+        text-decoration: underline; }
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
       padding-left: 30px; }
@@ -2316,12 +2360,11 @@ and more scalable.
 /*********************
 HEADER STYLES
 *********************/
-.home .parallax, .blog .parallax {
+.home .parallax, .home .blog .parallax {
   height: 100%;
   background-attachment: fixed; }
-
 .home .header {
-  background-image: url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/testimage.jpeg");
+  background-image: url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg");
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -2329,24 +2372,12 @@ HEADER STYLES
   @media all and (min-width: 1240px) {
     .home .header {
       height: 900px; } }
+.home .darken {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg"); }
 
 .header {
   background-color: lightblue; }
-
-#logo {
-  margin: 0.75rem 0;
-  padding-left: 01.563rem;
-  font-size: 2.813rem;
-  font-weight: bold; }
-  #logo a {
-    color: #111111;
-    text-decoration: none; }
-
-#logo-descr {
-  padding-left: 01.563rem;
-  font-size: 3.438rem;
-  color: chartreuse;
-  width: 100%; }
 
 /*********************
 HOMEPAGE STYLES
@@ -2354,6 +2385,8 @@ HOMEPAGE STYLES
 .home .hentry {
   border-radius: 0;
   border: none; }
+  .home .hentry header {
+    padding: 1.5rem 0; }
 .home .d-5of7 {
   max-width: 100%;
   width: 100%;
@@ -2380,18 +2413,10 @@ HOMEPAGE STYLES
 
 .page-title {
   text-align: center;
-  font-size: 3.125rem;
-  font-weight: bold; }
+  padding: 0.938rem 0; }
 
 .resume-container {
   background: #f8f9fa; }
-
-.goodtimes {
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 70%; }
 
 /*********************
 PAGE STYLES

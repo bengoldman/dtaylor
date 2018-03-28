@@ -17,6 +17,22 @@ Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
 *********************/
 
+
+// Custom Theme
+
+$gold:              #96833B;
+
+
+//Beige Analog Theme
+
+$beige:             #FFE691;
+$pale:              #FFFEA5;
+$off-white:         #FFFCD9;
+$dijon:             #D6C15A;
+$light-yellow:      #FFEF78;
+
+// Defaults
+
 $alert-yellow:      #ebe16f;
 $alert-red:         #fbe3e4;
 $alert-green:       #e6efc2;
@@ -38,6 +54,7 @@ $green:             #7dd667;
 
 $bones-pink:        #f01d4f;
 $blue:              #2980b9;
+$bright-blue:       lighten($blue, 20%);
 
 $link-color:        $bones-pink;
 $link-hover:        darken($link-color, 9%);

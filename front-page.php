@@ -41,7 +41,6 @@
 </div>
 <div class="resume-container">
 					<div style="padding: 5px"></div>
-					<div style="clear: both;"></div>
 					<div class="flex-resume">
 					<H1 class="h1x resume-title">Here are a few of the places where I've worked.</H1>
 						<div class="flex-row">
