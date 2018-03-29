@@ -31,7 +31,6 @@
 
 								</header>
 
-
 								<section class="entry-content cf" itemprop="articleBody">
 									<?php
 										// the content (pretty self explanatory huh)
@@ -56,6 +55,7 @@
 											'link_after'  => '</span>',
 										) );
 									?>
+									
 								</section>
 
 
@@ -79,7 +79,7 @@
 
 						</main>
 
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 
 				</div>
 

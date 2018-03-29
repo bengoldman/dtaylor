@@ -134,6 +134,27 @@ HOMEPAGE STYLES
 	padding: 1.563rem;
 }
 
+//Gallery
+
+.flex-container {
+	max-width: 100%;
+}
+
+.grid-flex {
+    display: flex;
+    flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	@media screen and (max-width: 480px) {
+		flex-direction: column;
+
+	}
+
+}
+
+
 /*********************
 HOEADER STYLES
 *********************/

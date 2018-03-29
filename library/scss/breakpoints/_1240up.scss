@@ -28,16 +28,21 @@ HOMEPAGE STYLES
   
   }
 
+
+  //Gallery
+
+  .flex-container {
+	max-width: 80%;
+}
+
+/*********************
+PAGE STYLES
+*********************/
+
+
 //Contact Page at largest sizes
 
-.page-id-10 {
 
-    #inner-content.wrap {
-        @media only screen and (min-width: 1800px) {
-            width: 60%;
-        }
-	}
-}
 
 /*********************
 NAVIGATION STYLES

@@ -311,6 +311,11 @@ HOMEPAGE STYLES
 			line-height: 32px;
 		}
 	}
+
+	.page-title {
+		text-align: center;
+		padding: 0.938rem 0;
+	}
 }
 
 .featured-image-home img {
@@ -321,18 +326,33 @@ HOMEPAGE STYLES
 	border: 0;
 }
 
-.page-title {
-	text-align: center;
-	padding: 0.938rem 0;
-}
 
 
 .resume-container {
 	background: $light-gray;
 }
 
+.flex-container {
+	margin: 0 auto;
+	padding: 0 1rem;
 
+	.cell {
 
+		margin: 1rem;
+		align-self: center;
+		border: solid 2px $black;
+	
+		img {
+			display: block;
+		}
+		
+		.flex-image {
+			max-width: 100%;
+		}
+
+	
+	  }
+}
 
 /*********************
 PAGE STYLES
@@ -342,34 +362,21 @@ PAGE STYLES
 
 .page-id-10 {
 
-	.wrap {
-		width: 80%;
+	.page-title {
+		text-align: center;
 	}
 
-	.hentry {
-		border: none;
-		margin-bottom: 0;
+	#inner-content {
+		display: flex;
+		justify-content: center;
+		max-width: 1200px;
 	}
 
-	footer.article-footer {
-		border-top: none;
+	.hentry header {
+		
+		width: 90%;
 	}
 
-	@media only screen and (max-width: 1100px) {
-
-		.wrap {
-			width: 90%;
-
-			.t-2of3 {
-				width: 90%;
-			}
-
-			.sidebar {
-				width: 90%;
-				padding: 01.563rem;
-			}
-		}
-	}
 }
 
 

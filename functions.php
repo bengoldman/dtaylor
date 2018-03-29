@@ -74,7 +74,9 @@ if ( ! isset( $content_width ) ) {
 
 // Thumbnail sizes
 
-add_image_size( 'bones-thumb-300', 300, 100, true );
+add_image_size( 'bones-thumb-300', 300, 300, true );
+add_image_size( 'bones-thumb-400', 400, 400, true );
+
 
 /*
 to add more sizes, simply copy a line from above
@@ -99,9 +101,10 @@ you like. Enjoy!
 add_filter( 'image_size_names_choose', 'bones_custom_image_sizes' );
 
 function bones_custom_image_sizes( $sizes ) {
-    return array_merge( $sizes, array(
-        'bones-thumb-300' => __('300px by 100px'),
-    ) );
+  return array_merge( $sizes, array(
+      'bones-thumb-300' => __('300px by 300px'),
+      'bones-thumb-400' => __('400px by 400px'),
+  ) );
 }
 
 /*
