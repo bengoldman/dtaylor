@@ -97,7 +97,7 @@
 						</div>
 					</div>
 					<div style="padding: 20px"></div>
-					<div style="text-align: center; font-size: 30px;">Click <a href="wp-content/uploads/2018/02/dtaylor_cv.pdf">here</a> to download or view my complete resume.</div>
+					<div style="text-align: center; font-size: 30px;">Click <a href="wp-content/uploads/2018/02/dtaylor_cv.pdf" style="color: red;">here</a> to download or view my complete resume.</div>
 					<div style="padding: 20px"></div>
 </div>
 

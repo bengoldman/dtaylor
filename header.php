@@ -75,8 +75,22 @@
 				<p id="logo" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
 
 				<?php // if you'd like to use the site description you can un-comment it below ?>
+
 				<div id="logo-descr">
+				<?php if (is_front_page() ) : ?>
+
 					<p><?php  bloginfo('description'); ?></p>
+
+				<?php elseif (is_home( ) ) : //blog page ?>
+
+					<p>Journal</p>
+
+				<?php elseif (is_page( 10 ) ) : //blog page ?>
+
+					<p>Contact Me</p>
+				
+				<?php endif; ?>	
+
 				</div>	
 
 

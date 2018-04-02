@@ -292,6 +292,12 @@ HOMEPAGE STYLES
   text-align: left; }
 
 /*********************
+PAGES
+*********************/
+.blog-main .article-header {
+  margin-right: 5%; }
+
+/*********************
 SIDEBARS & ASIDES
 *********************/
 .sidebar {
@@ -325,6 +331,9 @@ SIDEBARS & ASIDES
 /*********************
 HEADER STYLES
 *********************/
+#logo {
+  font-size: 3rem; }
+
 #logo-descr {
   font-size: 4.375rem;
   width: 80%; }

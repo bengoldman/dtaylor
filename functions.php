@@ -131,6 +131,7 @@ new image size.
   - Create some boilerplate Sections, Controls and Settings
 */
 
+
 function bones_theme_customizer($wp_customize) {
   // $wp_customize calls go here.
   //

@@ -13,21 +13,18 @@ on larger screens.
 HOMEPAGE STYLES
 *********************/
 
-#logo {
-    margin: 100px;
-      font-size: 80px;
-  
+.home {
+	
+	#logo {
+	font-size: 4.375rem;
   }
-  
-  #logo-descr {
-  
-    margin: 100px;
-    font-size: 100px;
-    width: 50%;
-  
-  
-  }
-
+   
+	#logo-descr {
+	
+		font-size: 5.000rem;
+		width: 50%;
+	}
+}
 
   //Gallery
 
@@ -41,7 +38,13 @@ PAGE STYLES
 
 
 //Contact Page at largest sizes
+// Blog
 
+
+
+#logo-descr {
+	font-size: 6.250rem;
+}
 
 
 /*********************

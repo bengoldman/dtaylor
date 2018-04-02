@@ -47,6 +47,7 @@
 			document.getElementById("navOuter").style.marginRight = "0";
 			document.body.style.backgroundColor = "white";
 		} 
+		
 		</script>
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>

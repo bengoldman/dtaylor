@@ -245,21 +245,27 @@ and more scalable.
 HEADER STYLES
 *********************/
 
+.header {
+	height: 300px;
+	@media all and (min-width: 1240px) { 
+		height: 500px; 
+	}
+}
+
+.parallax, 
+.blog .parallax, 
+.page-id-10 .parallax {
+	background-attachment: fixed;
+}
+
 .home {
 
-	.parallax, .blog .parallax {
-		height: 100%; 
-		background-attachment: fixed;
-	}
-	
-	.header, {
+	.header {
 		background-image: url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg");
 		background-size: cover;
 		background-position: center;
 		height: 600px;
-		border: $gray solid 0.125rem;
-			@media all and (min-width: 1240px) { 
-				height: 900px; }
+		border: #4B4846 solid 0.125rem;
 	}
 	.darken {
 		background-image: 
@@ -271,9 +277,82 @@ HEADER STYLES
 	  }
 }
 
-.header {
-	background-color: lightblue;
-}
+/*********************
+LINK STYLES
+*********************/
+
+
+	a, a:visited {
+		color: $white;
+
+		&:hover, &:focus {
+			color: $white;
+		}
+	
+		/* on click */
+		&:active {
+	
+		}
+	
+		/* mobile tap color */
+		&:link {
+			/*
+			this highlights links on iPhones/iPads.
+			so it basically works like the :hover selector
+			for mobile devices.
+			*/
+			-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+		}
+	}
+
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {}
+
+	.widgettitle {}
+
+	.widget {
+
+		ul {
+
+			li {
+
+				&:first-child {}
+
+				&:last-child {}
+
+				a {}
+
+				/* deep nesting */
+				ul {}
+
+			}
+
+		}
+
+	}
+
+	.no-widgets {
+		background-color: $white;
+		padding: 1.5em;
+		text-align: center;
+		border: 1px solid $border-color;
+		border-radius: 2px;
+		margin-bottom: 1.5em;
+	}
+
+	.sidebar .widget {
+		a, a:visited {
+			color: $black;
+
+			&:hover, &:focus {
+				color: $black;
+			}
+		}
+	}
 
 
 
@@ -358,12 +437,64 @@ HOMEPAGE STYLES
 PAGE STYLES
 *********************/
 
+body {
+
+	header {
+		
+		h1.page-title {
+			text-shadow: 1px 1px 1px;
+			font-weight: 600;
+			text-align: center;
+		}
+
+		#logo {
+			margin-bottom: 0;
+		}
+
+		#logo-descr {
+			text-align: center;
+			margin: 3.125rem auto;
+
+			p {
+				margin: 0;
+			}
+		}
+	}
+
+}
+
+
+
 // CONTACT PAGE
+
 
 .page-id-10 {
 
-	.page-title {
-		text-align: center;
+	
+	//background: no-repeat url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/woodbark2.jpg);
+
+	
+	.header {
+		background-image: url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/thumbsup.jpg);
+		background-repeat: no-repeat;
+		
+
+		#logo {
+			margin: 1.250rem;
+		}
+
+		#logo-descr {
+			mix-blend-mode: difference;
+			text-shadow: -1px -1px 0 #000, 
+						 1px -1px 0 #000, 
+						 -1px 1px 0 #000, 
+						 1px 1px 0 #000;
+		}
+
+		.page-title {
+			text-align: center;
+		}
+
 	}
 
 	#inner-content {
@@ -372,14 +503,96 @@ PAGE STYLES
 		max-width: 1200px;
 	}
 
+	article {
+		border-radius: 25px;
+
+		input {
+			border-radius: 25px;
+		}
+	}
+
 	.hentry header {
 		
 		width: 90%;
+		border-bottom: 1px solid black;
+		padding: 1.5em;
+		margin-left: auto;
+		margin-right: auto;
 	}
+
 
 }
 
+// Blog 
 
+body.blog {
+
+		a, a:visited {
+			color: $white;
+	
+			&:hover, &:focus {
+				color: $white;
+			}
+		
+			/* on click */
+			&:active {
+		
+			}
+		
+			/* mobile tap color */
+			&:link {
+				/*
+				this highlights links on iPhones/iPads.
+				so it basically works like the :hover selector
+				for mobile devices.
+				*/
+				-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+			}
+		}
+
+	header {
+		background-image: url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/leather.jpg);
+		background-attachment: fixed;
+
+	}
+
+
+	.blog-titles {
+		background: white;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 5px 0;
+		margin-bottom: 10px;
+		border-radius: 20px;
+		color: $black;
+
+		.big-title {
+			text-align: center;
+			font-size: 2.8rem;
+		}
+
+		.small-title {
+			text-align: center;
+		}
+	}
+
+	.blog-main {
+		display: flex;
+		position: relative;
+		flex-direction: column;
+
+		article {
+			flex: 1;
+			border: none;
+		}
+
+		.article-header {
+			text-shadow: 1px 1px 1px;
+		}
+
+	}
+
+}
 
 /*********************
 FOOTER STYLES
@@ -445,4 +658,3 @@ FOOTER STYLES
 			}
 		}
 	}
-

@@ -1355,24 +1355,6 @@ LAYOUT & GRID STYLES
   margin: 0 auto; }
 
 /*********************
-LINK STYLES
-*********************/
-a, a:visited {
-  color: #f01d4f;
-  /* on hover */
-  /* on click */
-  /* mobile tap color */ }
-  a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #d10e3c; }
-  a:link, a:visited:link {
-    /*
-    this highlights links on iPhones/iPads.
-    so it basically works like the :hover selector
-    for mobile devices.
-    */
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
-
-/*********************
 HOMEPAGE STYLES
 *********************/
 .resume-title {
@@ -1442,14 +1424,14 @@ HOMEPAGE STYLES
 HOEADER STYLES
 *********************/
 #logo {
-  font-size: 2.813rem;
+  font-size: 2.2rem;
   font-weight: bold; }
   #logo a {
     color: #ffff;
     text-decoration: none; }
 
 #logo-descr {
-  font-size: 2.813rem;
+  font-size: 3.438rem;
   font-weight: bold;
   color: #ffff;
   width: 100%; }
@@ -1457,6 +1439,10 @@ HOEADER STYLES
 /*********************
 PAGE STYLES
 *********************/
+.blog-main .article-header {
+  margin-left: auto;
+  margin-right: auto; }
+
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
@@ -1582,7 +1568,7 @@ POSTS & CONTENT STYLES
 /* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
-  color: #9fa6b4;
+  color: #ffff;
   font-style: italic;
   margin: 0; }
 
@@ -1857,20 +1843,6 @@ COMMENT FORM STYLES
   margin: 0 20px 1.1em; }
 
 /*********************
-SIDEBARS & ASIDES
-*********************/
-.widget ul li {
-  /* deep nesting */ }
-
-.no-widgets {
-  background-color: #ffff;
-  padding: 1.5em;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  margin-bottom: 1.5em; }
-
-/*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them
@@ -2019,6 +1991,12 @@ you can add resource intensive styles.
     text-align: left; }
 
   /*********************
+  PAGES
+  *********************/
+  .blog-main .article-header {
+    margin-right: 5%; }
+
+  /*********************
   SIDEBARS & ASIDES
   *********************/
   .sidebar {
@@ -2052,6 +2030,9 @@ you can add resource intensive styles.
   /*********************
   HEADER STYLES
   *********************/
+  #logo {
+    font-size: 3rem; }
+
   #logo-descr {
     font-size: 4.375rem;
     width: 80%; }
@@ -2128,13 +2109,10 @@ This is for the larger monitors and possibly full screen viewers.
   /*********************
   HOMEPAGE STYLES
   *********************/
-  #logo {
-    margin: 100px;
-    font-size: 80px; }
-
-  #logo-descr {
-    margin: 100px;
-    font-size: 100px;
+  .home #logo {
+    font-size: 4.375rem; }
+  .home #logo-descr {
+    font-size: 5.000rem;
     width: 50%; }
 
   .flex-container {
@@ -2143,6 +2121,9 @@ This is for the larger monitors and possibly full screen viewers.
   /*********************
   PAGE STYLES
   *********************/
+  #logo-descr {
+    font-size: 6.250rem; }
+
   /*********************
   NAVIGATION STYLES
   *********************/
@@ -2388,24 +2369,62 @@ and more scalable.
 /*********************
 HEADER STYLES
 *********************/
-.home .parallax, .home .blog .parallax {
-  height: 100%;
+.header {
+  height: 300px; }
+  @media all and (min-width: 1240px) {
+    .header {
+      height: 500px; } }
+
+.parallax,
+.blog .parallax,
+.page-id-10 .parallax {
   background-attachment: fixed; }
+
 .home .header {
   background-image: url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg");
   background-size: cover;
   background-position: center;
   height: 600px;
-  border: #eaedf2 solid 0.125rem; }
-  @media all and (min-width: 1240px) {
-    .home .header {
-      height: 900px; } }
+  border: #4B4846 solid 0.125rem; }
 .home .darken {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg"); }
 
-.header {
-  background-color: lightblue; }
+/*********************
+LINK STYLES
+*********************/
+a, a:visited {
+  color: #ffff;
+  /* on click */
+  /* mobile tap color */ }
+  a:hover, a:focus, a:visited:hover, a:visited:focus {
+    color: #ffff; }
+  a:link, a:visited:link {
+    /*
+    this highlights links on iPhones/iPads.
+    so it basically works like the :hover selector
+    for mobile devices.
+    */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.widget ul li {
+  /* deep nesting */ }
+
+.no-widgets {
+  background-color: #ffff;
+  padding: 1.5em;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-bottom: 1.5em; }
+
+.sidebar .widget a, .sidebar .widget a:visited {
+  color: #323944; }
+  .sidebar .widget a:hover, .sidebar .widget a:focus, .sidebar .widget a:visited:hover, .sidebar .widget a:visited:focus {
+    color: #323944; }
 
 /*********************
 HOMEPAGE STYLES
@@ -2461,8 +2480,28 @@ HOMEPAGE STYLES
 /*********************
 PAGE STYLES
 *********************/
-.page-id-10 .page-title {
+body header h1.page-title {
+  text-shadow: 1px 1px 1px;
+  font-weight: 600;
   text-align: center; }
+body header #logo {
+  margin-bottom: 0; }
+body header #logo-descr {
+  text-align: center;
+  margin: 3.125rem auto; }
+  body header #logo-descr p {
+    margin: 0; }
+
+.page-id-10 .header {
+  background-image: url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/thumbsup.jpg);
+  background-repeat: no-repeat; }
+  .page-id-10 .header #logo {
+    margin: 1.250rem; }
+  .page-id-10 .header #logo-descr {
+    mix-blend-mode: difference;
+    text-shadow: -1px -1px 0 #000,  1px -1px 0 #000,  -1px 1px 0 #000,  1px 1px 0 #000; }
+  .page-id-10 .header .page-title {
+    text-align: center; }
 .page-id-10 #inner-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2471,8 +2510,62 @@ PAGE STYLES
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 1200px; }
+.page-id-10 article {
+  border-radius: 25px; }
+  .page-id-10 article input {
+    border-radius: 25px; }
 .page-id-10 .hentry header {
-  width: 90%; }
+  width: 90%;
+  border-bottom: 1px solid black;
+  padding: 1.5em;
+  margin-left: auto;
+  margin-right: auto; }
+
+body.blog a, body.blog a:visited {
+  color: #ffff;
+  /* on click */
+  /* mobile tap color */ }
+  body.blog a:hover, body.blog a:focus, body.blog a:visited:hover, body.blog a:visited:focus {
+    color: #ffff; }
+  body.blog a:link, body.blog a:visited:link {
+    /*
+    this highlights links on iPhones/iPads.
+    so it basically works like the :hover selector
+    for mobile devices.
+    */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+body.blog header {
+  background-image: url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/leather.jpg);
+  background-attachment: fixed; }
+body.blog .blog-titles {
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 0;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  color: #323944; }
+  body.blog .blog-titles .big-title {
+    text-align: center;
+    font-size: 2.8rem; }
+  body.blog .blog-titles .small-title {
+    text-align: center; }
+body.blog .blog-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  body.blog .blog-main article {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border: none; }
+  body.blog .blog-main .article-header {
+    text-shadow: 1px 1px 1px; }
 
 /*********************
 FOOTER STYLES
