@@ -247,9 +247,6 @@ HEADER STYLES
 
 .header {
 	height: 300px;
-	@media all and (min-width: 1240px) { 
-		height: 500px; 
-	}
 }
 
 .parallax, 
@@ -266,7 +263,9 @@ HEADER STYLES
 		background-position: center;
 		height: 600px;
 		border: #4B4846 solid 0.125rem;
+
 	}
+
 	.darken {
 		background-image: 
 		  linear-gradient(
@@ -368,6 +367,7 @@ HOMEPAGE STYLES
 
 		header {
 			padding: 1.5rem 0;
+			background: none;
 		}
 	}
 
@@ -439,7 +439,16 @@ PAGE STYLES
 
 body {
 
+	#content {
+		
+	}
+
 	header {
+
+		background-image: url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/brick-wall.png);
+		background-color: #280000;
+		background-attachment: fixed;
+
 		
 		h1.page-title {
 			text-shadow: 1px 1px 1px;
@@ -449,11 +458,15 @@ body {
 
 		#logo {
 			margin-bottom: 0;
+			a {
+				color: $white;
+				//mix-blend-mode: difference;
+				text-decoration: none;
+			}
 		}
 
 		#logo-descr {
 			text-align: center;
-			margin: 3.125rem auto;
 
 			p {
 				margin: 0;
@@ -462,6 +475,8 @@ body {
 	}
 
 }
+
+
 
 
 
@@ -477,11 +492,7 @@ body {
 	.header {
 		background-image: url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/thumbsup.jpg);
 		background-repeat: no-repeat;
-		
 
-		#logo {
-			margin: 1.250rem;
-		}
 
 		#logo-descr {
 			mix-blend-mode: difference;
@@ -495,12 +506,6 @@ body {
 			text-align: center;
 		}
 
-	}
-
-	#inner-content {
-		display: flex;
-		justify-content: center;
-		max-width: 1200px;
 	}
 
 	article {
@@ -518,12 +523,25 @@ body {
 		padding: 1.5em;
 		margin-left: auto;
 		margin-right: auto;
+		background: none;
 	}
 
 
 }
 
 // Blog 
+
+.single {
+	.hentry header {
+		
+		width: 100%;
+		border-bottom: 1px solid black;
+		padding: 1.5em;
+		margin-left: auto;
+		margin-right: auto;
+		background: none;
+	}
+}
 
 body.blog {
 
@@ -549,12 +567,6 @@ body.blog {
 				-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
 			}
 		}
-
-	header {
-		background-image: url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/leather.jpg);
-		background-attachment: fixed;
-
-	}
 
 
 	.blog-titles {

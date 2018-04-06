@@ -275,8 +275,6 @@ HOMEPAGE STYLES
 .home .hentry header {
   margin-left: auto;
   margin-right: auto; }
-.home .hentry .page-title {
-  text-align: left; }
 
 .resume-title {
   text-align: left; }
@@ -367,13 +365,11 @@ be seen on the Desktop.
 /*********************
 HOMEPAGE STYLES
 *********************/
-.flex-resume {
+.home .flex-resume {
   width: 70%; }
-
-.hentry header {
+.home .hentry header {
   width: 70%; }
-
-.goodtimes {
+.home .goodtimes {
   width: 70%; }
 
 /*********************

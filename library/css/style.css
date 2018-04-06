@@ -1357,15 +1357,15 @@ LAYOUT & GRID STYLES
 /*********************
 HOMEPAGE STYLES
 *********************/
-.resume-title {
+.home #logo-descr {
+  margin: 3.125rem auto; }
+.home .resume-title {
   text-align: center;
   padding: 1.563rem; }
-
-.flex-resume {
+.home .flex-resume {
   margin-left: auto;
   margin-right: auto; }
-
-.flex-row {
+.home .flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1377,27 +1377,24 @@ HOMEPAGE STYLES
   border-bottom: dotted 1px;
   padding: 40px;
   font-size: 1.375rem; }
-  .flex-row:last-child {
+  .home .flex-row:last-child {
     border: none; }
-  .flex-row .flex-item1, .flex-row .flex-item2 {
+  .home .flex-row .flex-item1, .home .flex-row .flex-item2 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1; }
-    .flex-row .flex-item1 p, .flex-row .flex-item2 p {
+    .home .flex-row .flex-item1 p, .home .flex-row .flex-item2 p {
       width: 100% !important;
       text-align: left !important; }
-
-.goodtimes {
+.home .goodtimes {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   display: block;
   padding: 1.563rem; }
-
-.flex-container {
+.home .flex-container {
   max-width: 100%; }
-
-.grid-flex {
+.home .grid-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1414,7 +1411,7 @@ HOMEPAGE STYLES
       -ms-flex-align: center;
           align-items: center; }
   @media screen and (max-width: 480px) {
-    .grid-flex {
+    .home .grid-flex {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -1426,9 +1423,6 @@ HOEADER STYLES
 #logo {
   font-size: 2.2rem;
   font-weight: bold; }
-  #logo a {
-    color: #ffff;
-    text-decoration: none; }
 
 #logo-descr {
   font-size: 3.438rem;
@@ -1971,8 +1965,6 @@ you can add resource intensive styles.
   .home .hentry header {
     margin-left: auto;
     margin-right: auto; }
-  .home .hentry .page-title {
-    text-align: left; }
 
   .resume-title {
     text-align: left; }
@@ -2073,13 +2065,11 @@ you can add resource intensive styles.
   /*********************
   HOMEPAGE STYLES
   *********************/
-  .flex-resume {
+  .home .flex-resume {
     width: 70%; }
-
-  .hentry header {
+  .home .hentry header {
     width: 70%; }
-
-  .goodtimes {
+  .home .goodtimes {
     width: 70%; }
 
   /*********************
@@ -2109,20 +2099,30 @@ This is for the larger monitors and possibly full screen viewers.
   /*********************
   HOMEPAGE STYLES
   *********************/
-  .home #logo {
-    font-size: 4.375rem; }
-  .home #logo-descr {
-    font-size: 5.000rem;
-    width: 50%; }
-
-  .flex-container {
+  .home .flex-container {
     max-width: 80%; }
 
   /*********************
   PAGE STYLES
   *********************/
+  #logo {
+    font-size: 4.375rem; }
+
   #logo-descr {
-    font-size: 6.250rem; }
+    font-size: 5.000rem;
+    width: 50%; }
+
+  #inner-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 1200px; }
+
+  #logo-descr {
+    margin: 0 auto; }
 
   /*********************
   NAVIGATION STYLES
@@ -2371,9 +2371,6 @@ HEADER STYLES
 *********************/
 .header {
   height: 300px; }
-  @media all and (min-width: 1240px) {
-    .header {
-      height: 500px; } }
 
 .parallax,
 .blog .parallax,
@@ -2433,7 +2430,8 @@ HOMEPAGE STYLES
   border-radius: 0;
   border: none; }
   .home .hentry header {
-    padding: 1.5rem 0; }
+    padding: 1.5rem 0;
+    background: none; }
 .home .d-5of7 {
   max-width: 100%;
   width: 100%;
@@ -2480,36 +2478,32 @@ HOMEPAGE STYLES
 /*********************
 PAGE STYLES
 *********************/
-body header h1.page-title {
-  text-shadow: 1px 1px 1px;
-  font-weight: 600;
-  text-align: center; }
-body header #logo {
-  margin-bottom: 0; }
-body header #logo-descr {
-  text-align: center;
-  margin: 3.125rem auto; }
-  body header #logo-descr p {
-    margin: 0; }
+body header {
+  background-image: url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/brick-wall.png);
+  background-color: #280000;
+  background-attachment: fixed; }
+  body header h1.page-title {
+    text-shadow: 1px 1px 1px;
+    font-weight: 600;
+    text-align: center; }
+  body header #logo {
+    margin-bottom: 0; }
+    body header #logo a {
+      color: #ffff;
+      text-decoration: none; }
+  body header #logo-descr {
+    text-align: center; }
+    body header #logo-descr p {
+      margin: 0; }
 
 .page-id-10 .header {
   background-image: url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/thumbsup.jpg);
   background-repeat: no-repeat; }
-  .page-id-10 .header #logo {
-    margin: 1.250rem; }
   .page-id-10 .header #logo-descr {
     mix-blend-mode: difference;
     text-shadow: -1px -1px 0 #000,  1px -1px 0 #000,  -1px 1px 0 #000,  1px 1px 0 #000; }
   .page-id-10 .header .page-title {
     text-align: center; }
-.page-id-10 #inner-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 1200px; }
 .page-id-10 article {
   border-radius: 25px; }
   .page-id-10 article input {
@@ -2519,7 +2513,16 @@ body header #logo-descr {
   border-bottom: 1px solid black;
   padding: 1.5em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: none; }
+
+.single .hentry header {
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  background: none; }
 
 body.blog a, body.blog a:visited {
   color: #ffff;
@@ -2534,9 +2537,6 @@ body.blog a, body.blog a:visited {
     for mobile devices.
     */
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
-body.blog header {
-  background-image: url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/leather.jpg);
-  background-attachment: fixed; }
 body.blog .blog-titles {
   background: white;
   margin-left: auto;

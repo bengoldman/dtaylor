@@ -13,39 +13,45 @@ on larger screens.
 HOMEPAGE STYLES
 *********************/
 
-.home {
-	
-	#logo {
-	font-size: 4.375rem;
-  }
-   
-	#logo-descr {
-	
-		font-size: 5.000rem;
-		width: 50%;
-	}
-}
 
   //Gallery
-
-  .flex-container {
-	max-width: 80%;
+.home {
+	.flex-container {
+		max-width: 80%;
+	}
 }
 
 /*********************
 PAGE STYLES
 *********************/
 
-
-//Contact Page at largest sizes
-// Blog
-
-
-
+#logo {
+	font-size: 4.375rem;
+  }
+   
 #logo-descr {
-	font-size: 6.250rem;
+
+font-size: 5.000rem;
+width: 50%;
 }
 
+
+#inner-content {
+	display: flex;
+	justify-content: center;
+	max-width: 1200px;
+}
+
+#logo-descr {
+   
+	margin: 0 auto;
+}
+// Blog posts
+
+.single-post .header {
+	//height: 300px;
+
+}
 
 /*********************
 NAVIGATION STYLES

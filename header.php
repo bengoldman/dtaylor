@@ -89,6 +89,14 @@
 
 					<p>Contact Me</p>
 				
+				<?php elseif (is_page( 6 ) ) : //blog page ?>
+
+					<p>About</p>
+				
+				<?php elseif (is_single( ) ) : //blog page ?>
+
+					<p>Posts</p>
+				
 				<?php endif; ?>	
 
 				</div>	
