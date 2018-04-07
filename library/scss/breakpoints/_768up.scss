@@ -21,7 +21,9 @@ body {}
 
 
 //Contact Page
-.your-name,
+
+//Styles for side by side input fields on form
+/*.your-name,
 .your-email {
 	float: left;
 	width: 49%;
@@ -34,6 +36,7 @@ body {}
 .your-eamil {
 	padding-left: 0.938rem;
 }
+*/
 
 /*********************
 LAYOUT & GRID STYLES
@@ -93,13 +96,37 @@ HOMEPAGE STYLES
 PAGES
 *********************/
 
-.blog-main {
 
-	.article-header {
+.blog {
 
-		margin-right: 5%;
+
+	.blog-main {
+
+		.article-header {
+
+			margin-right: 5%;
+		}
+
 	}
+}
 
+// Contact page
+
+.page-id-10 {
+	
+	.t-2of3  {
+
+		width: 50%;
+	}
+}
+
+// About page
+
+.page-id-6 {
+
+	.entry-content {
+		padding: 2.54em 4em;
+	}
 }
 
 
@@ -235,12 +262,7 @@ HEADER STYLES
 	font-size:  3rem;
 }
 
-#logo-descr {
 
-	font-size: 4.375rem;
-	width: 80%;
-
-}
 
 
 /*********************
@@ -252,10 +274,16 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
+
+
 .footer-links {
+
+	font-size: 20px;
+
 	ul {
 		li {
 			a {
+				
 				&:hover {}
 			}
 			/*

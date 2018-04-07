@@ -1226,12 +1226,10 @@ select {
   background-repeat: no-repeat;
   background-position: 97.5% center; }
 
-.page-id-10 section {
-  text-align: left; }
-  .page-id-10 section .field:hover {
-    border-color: red; }
+.page-id-10 section .field:hover {
+  border-color: red; }
 .page-id-10 input[type="submit"] {
-  background-color: #111111;
+  background-color: #841F27;
   color: #ffff;
   font-size: 25px;
   font-weight: bold;
@@ -1562,7 +1560,7 @@ POSTS & CONTENT STYLES
 /* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
-  color: #ffff;
+  color: #323944;
   font-style: italic;
   margin: 0; }
 
@@ -1908,6 +1906,12 @@ tweeners.
 
   /* end .entry-content */
   /*********************
+  PAGE STYLES
+  *********************/
+  .page-id-10 .t-2of3 {
+    width: 70%; }
+
+  /*********************
   FOOTER STYLES
   *********************/
   /*
@@ -1938,17 +1942,20 @@ you can add resource intensive styles.
   /*********************
   GENERAL STYLES
   *********************/
-  .your-name,
+  /*.your-name,
   .your-email {
-    float: left;
-    width: 49%; }
-
+  	float: left;
+  	width: 49%;
+  }
+  
   .your-name {
-    padding-right: 0.938rem; }
-
+  	padding-right: 0.938rem;
+  }
+  
   .your-eamil {
-    padding-left: 0.938rem; }
-
+  	padding-left: 0.938rem;
+  }
+  */
   /*********************
   LAYOUT & GRID STYLES
   ********************
@@ -1985,8 +1992,14 @@ you can add resource intensive styles.
   /*********************
   PAGES
   *********************/
-  .blog-main .article-header {
+  .blog .blog-main .article-header {
     margin-right: 5%; }
+
+  .page-id-10 .t-2of3 {
+    width: 50%; }
+
+  .page-id-6 .entry-content {
+    padding: 2.54em 4em; }
 
   /*********************
   SIDEBARS & ASIDES
@@ -2025,10 +2038,6 @@ you can add resource intensive styles.
   #logo {
     font-size: 3rem; }
 
-  #logo-descr {
-    font-size: 4.375rem;
-    width: 80%; }
-
   /*********************
   FOOTER STYLES
   *********************/
@@ -2037,12 +2046,14 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  .footer-links ul li {
-    /*
-    be careful with the depth of your menus.
-    it's very rare to have multi-depth menus in
-    the footer.
-    */ }
+  .footer-links {
+    font-size: 20px; }
+    .footer-links ul li {
+      /*
+      be careful with the depth of your menus.
+      it's very rare to have multi-depth menus in
+      the footer.
+      */ }
 
   /* end .footer-links */ }
 /*********************
@@ -2075,12 +2086,13 @@ you can add resource intensive styles.
   /*********************
   PAGE STYLES
   *********************/
-  .page-id-10 .t-2of3 {
-    width: 60%;
-    padding-right: 01.563rem; }
-  .page-id-10 .sidebar {
-    width: 40%;
-    padding-left: 01.563rem; } }
+  .page-id-10 {
+    	/*.sidebar {
+        width: 40%;
+        padding-left: 01.563rem;
+    	}*/ }
+    .page-id-10 .t-2of3 {
+      width: 40%; } }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
@@ -2122,8 +2134,12 @@ This is for the larger monitors and possibly full screen viewers.
     max-width: 1200px; }
 
   #logo-descr {
-    margin: 0 auto; }
+    margin: 0 auto; } }
+  @media only screen and (min-width: 1240px) and (min-width: 1241px) {
+    #logo-descr {
+      padding-top: 0 !important; } }
 
+@media only screen and (min-width: 1240px) {
   /*********************
   NAVIGATION STYLES
   *********************/
@@ -2378,14 +2394,12 @@ HEADER STYLES
   background-attachment: fixed; }
 
 .home .header {
-  background-image: url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg");
   background-size: cover;
   background-position: center;
   height: 600px;
   border: #4B4846 solid 0.125rem; }
-.home .darken {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg"); }
 
 /*********************
 LINK STYLES
@@ -2480,7 +2494,7 @@ PAGE STYLES
 *********************/
 body header {
   background-image: url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/brick-wall.png);
-  background-color: #280000;
+  background-color: #841F27;
   background-attachment: fixed; }
   body header h1.page-title {
     text-shadow: 1px 1px 1px;
@@ -2492,33 +2506,53 @@ body header {
       color: #ffff;
       text-decoration: none; }
   body header #logo-descr {
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px; }
     body header #logo-descr p {
       margin: 0; }
 
+.t-2of3 {
+  float: none;
+  padding-right: o auto;
+  margin: 0 auto; }
+
 .page-id-10 .header {
-  background-image: url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/thumbsup.jpg);
-  background-repeat: no-repeat; }
-  .page-id-10 .header #logo-descr {
-    mix-blend-mode: difference;
-    text-shadow: -1px -1px 0 #000,  1px -1px 0 #000,  -1px 1px 0 #000,  1px 1px 0 #000; }
-  .page-id-10 .header .page-title {
-    text-align: center; }
+  /*#logo-descr {
+  	mix-blend-mode: difference;
+  	text-shadow: -1px -1px 0 #000, 
+  				 1px -1px 0 #000, 
+  				 -1px 1px 0 #000, 
+  				 1px 1px 0 #000;
+  }*/ }
 .page-id-10 article {
-  border-radius: 25px; }
+  border-radius: 25px;
+  -webkit-box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.48), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.48), 0 6px 20px 0 rgba(0, 0, 0, 0.12); }
   .page-id-10 article input {
-    border-radius: 25px; }
+    border-radius: 10px; }
 .page-id-10 .hentry header {
   width: 90%;
-  border-bottom: 1px solid black;
+  border-bottom: none;
   padding: 1.5em;
   margin-left: auto;
   margin-right: auto;
   background: none; }
+.page-id-10 .entry-content form {
+  padding-bottom: 30px; }
+.page-id-10 .entry-content h2 {
+  margin-top: 20px;
+  text-align: center; }
+.page-id-10 .entry-content p {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto; }
+  .page-id-10 .entry-content p input {
+    width: 100%; }
 
 .single .hentry header {
   width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: none;
   padding: 1.5em;
   margin-left: auto;
   margin-right: auto;
@@ -2565,7 +2599,10 @@ body.blog .blog-main {
             flex: 1;
     border: none; }
   body.blog .blog-main .article-header {
-    text-shadow: 1px 1px 1px; }
+    text-shadow: 1px 1px 1px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/crowd.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/crowd.jpg);
+    background-attachment: fixed; }
 
 /*********************
 FOOTER STYLES

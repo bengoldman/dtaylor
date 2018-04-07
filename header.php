@@ -91,7 +91,7 @@
 				
 				<?php elseif (is_page( 6 ) ) : //blog page ?>
 
-					<p>About</p>
+					<p>About Me</p>
 				
 				<?php elseif (is_single( ) ) : //blog page ?>
 

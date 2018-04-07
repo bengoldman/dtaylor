@@ -137,7 +137,6 @@ select {
 
 	section {
 
-		text-align: left;
 
 		.field  {
 
@@ -149,7 +148,7 @@ select {
 
 	input[type="submit"] {
 
-		background-color: $super-black;
+		background-color: $brick;
 		color: $white;
 		font-size: 25px;
 		font-weight: bold;

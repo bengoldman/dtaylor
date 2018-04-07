@@ -43,8 +43,12 @@ width: 50%;
 }
 
 #logo-descr {
-   
 	margin: 0 auto;
+
+	@media screen and (min-width: 1241px) { 
+
+		padding-top: 0 !important;
+	}
 }
 // Blog posts
 

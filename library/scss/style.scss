@@ -258,7 +258,12 @@ HEADER STYLES
 .home {
 
 	.header {
-		background-image: url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg");
+		background-image: 
+		  linear-gradient(
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		  ),
+		  url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg");
 		background-size: cover;
 		background-position: center;
 		height: 600px;
@@ -266,14 +271,7 @@ HEADER STYLES
 
 	}
 
-	.darken {
-		background-image: 
-		  linear-gradient(
-			rgba(0, 0, 0, 0.5),
-			rgba(0, 0, 0, 0.5)
-		  ),
-		  url("http://localhost:8888/dantaylor/wp-content/uploads/2018/02/Welsh_Expo.jpg");
-	  }
+
 }
 
 /*********************
@@ -446,7 +444,7 @@ body {
 	header {
 
 		background-image: url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/brick-wall.png);
-		background-color: #280000;
+		background-color: $brick;
 		background-attachment: fixed;
 
 		
@@ -467,6 +465,8 @@ body {
 
 		#logo-descr {
 			text-align: center;
+			margin: 0 auto;
+			padding-top: 40px;
 
 			p {
 				margin: 0;
@@ -476,7 +476,12 @@ body {
 
 }
 
+.t-2of3  {
 
+	float: none;
+	padding-right: o auto;
+	margin: 0 auto;
+}
 
 
 
@@ -490,42 +495,65 @@ body {
 
 	
 	.header {
-		background-image: url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/thumbsup.jpg);
-		background-repeat: no-repeat;
+		//background-image: url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/thumbsup.jpg);
+		//background-repeat: no-repeat;
 
 
-		#logo-descr {
+		/*#logo-descr {
 			mix-blend-mode: difference;
 			text-shadow: -1px -1px 0 #000, 
 						 1px -1px 0 #000, 
 						 -1px 1px 0 #000, 
 						 1px 1px 0 #000;
+		}*/
+
+	}
+
+	
+		
+
+		article {
+			border-radius: 25px;
+			//background: url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/brushed-alum-dark.png);
+			box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.48), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+			
+
+			input {
+				border-radius: 10px;
+			}
 		}
 
-		.page-title {
+		.hentry header {
+			
+			width: 90%;
+			border-bottom: none;
+			padding: 1.5em;
+			margin-left: auto;
+			margin-right: auto;
+			background: none;
+		}
+
+	.entry-content {
+
+		form {
+			padding-bottom: 30px;
+		}
+
+		h2 {
+			margin-top: 20px;
 			text-align: center;
 		}
 
-	}
+		p {
+			text-align: center;
+			width: 90%;
+			margin: 0 auto;
 
-	article {
-		border-radius: 25px;
-
-		input {
-			border-radius: 25px;
+			input {
+				width: 100%;
+			}
 		}
 	}
-
-	.hentry header {
-		
-		width: 90%;
-		border-bottom: 1px solid black;
-		padding: 1.5em;
-		margin-left: auto;
-		margin-right: auto;
-		background: none;
-	}
-
 
 }
 
@@ -535,7 +563,7 @@ body {
 	.hentry header {
 		
 		width: 100%;
-		border-bottom: 1px solid black;
+		border-bottom: none;
 		padding: 1.5em;
 		margin-left: auto;
 		margin-right: auto;
@@ -600,6 +628,13 @@ body.blog {
 
 		.article-header {
 			text-shadow: 1px 1px 1px;
+			background-image: linear-gradient(
+				rgba(0, 0, 0, 0.5),
+				rgba(0, 0, 0, 0.5)
+				),
+			  url(http://localhost:8888/dantaylor/wp-content/uploads/2018/02/crowd.jpg);
+			//background-color: $black;
+			background-attachment: fixed;
 		}
 
 	}
@@ -634,6 +669,7 @@ FOOTER STYLES
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }
 
 

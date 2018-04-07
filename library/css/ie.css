@@ -225,6 +225,12 @@ POSTS & CONTENT STYLES
 
 /* end .entry-content */
 /*********************
+PAGE STYLES
+*********************/
+.page-id-10 .t-2of3 {
+  width: 70%; }
+
+/*********************
 FOOTER STYLES
 *********************/
 /*
@@ -248,17 +254,20 @@ come into play. Have fun!
 /*********************
 GENERAL STYLES
 *********************/
-.your-name,
+/*.your-name,
 .your-email {
-  float: left;
-  width: 49%; }
+	float: left;
+	width: 49%;
+}
 
 .your-name {
-  padding-right: 0.938rem; }
+	padding-right: 0.938rem;
+}
 
 .your-eamil {
-  padding-left: 0.938rem; }
-
+	padding-left: 0.938rem;
+}
+*/
 /*********************
 LAYOUT & GRID STYLES
 ********************
@@ -292,8 +301,14 @@ HOMEPAGE STYLES
 /*********************
 PAGES
 *********************/
-.blog-main .article-header {
+.blog .blog-main .article-header {
   margin-right: 5%; }
+
+.page-id-10 .t-2of3 {
+  width: 50%; }
+
+.page-id-6 .entry-content {
+  padding: 2.54em 4em; }
 
 /*********************
 SIDEBARS & ASIDES
@@ -332,10 +347,6 @@ HEADER STYLES
 #logo {
   font-size: 3rem; }
 
-#logo-descr {
-  font-size: 4.375rem;
-  width: 80%; }
-
 /*********************
 FOOTER STYLES
 *********************/
@@ -344,12 +355,14 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-.footer-links ul li {
-  /*
-  be careful with the depth of your menus.
-  it's very rare to have multi-depth menus in
-  the footer.
-  */ }
+.footer-links {
+  font-size: 20px; }
+  .footer-links ul li {
+    /*
+    be careful with the depth of your menus.
+    it's very rare to have multi-depth menus in
+    the footer.
+    */ }
 
 /* end .footer-links */
 /******************************************************************
@@ -375,12 +388,13 @@ HOMEPAGE STYLES
 /*********************
 PAGE STYLES
 *********************/
-.page-id-10 .t-2of3 {
-  width: 60%;
-  padding-right: 01.563rem; }
-.page-id-10 .sidebar {
-  width: 40%;
-  padding-left: 01.563rem; }
+.page-id-10 {
+  	/*.sidebar {
+      width: 40%;
+      padding-left: 01.563rem;
+  	}*/ }
+  .page-id-10 .t-2of3 {
+    width: 40%; }
 
 /*
 you can call the larger styles if you want, but there's really no need

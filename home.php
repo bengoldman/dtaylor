@@ -15,7 +15,7 @@
 
 							<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><!-- Link wraps entire blog tile -->
 								<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
-								<header class="article-header">
+								<header class="article-header darken">
 
 									<h1 class="h1 entry-title"><?php the_title(); ?></h1>
 									<p class="byline entry-meta vcard">
